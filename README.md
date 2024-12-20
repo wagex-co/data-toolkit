@@ -1,0 +1,2 @@
+# oddsgetter
+get odds
