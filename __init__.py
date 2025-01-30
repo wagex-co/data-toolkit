@@ -1,11 +1,14 @@
 from dataclasses import dataclass
-from datetime import datetime
-from typing import Dict, List, Optional
+from datetime import datetime, timedelta
+from typing import Dict, List, Optional, Tuple
 import requests
 import re
 import json
 import random
-import time
+import asyncio
+import aiohttp
+from functools import lru_cache
+import backoff  # You'll need to pip install backoff
 
 SPORT_DICT = {
     "NBA": "nba-basketball",
@@ -79,12 +82,24 @@ class Game:
         )
 
 class Scoreboard:
-    def __init__(self, sport='NBA', date="", current_line=True, delay=False):
+    def __init__(self, sport='NBA', days_ahead=1, current_line=True, delay=False):
         self.games: List[Game] = []
+        date = (datetime.today() + timedelta(days=days_ahead)).strftime("%Y-%m-%d")
         self.date = date
         self.delay = delay
         self.current_line = current_line
         self.sport = sport
+        self.session = requests.Session()  # Reuse session for better performance
+        self.user_agents = [
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0',
+            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
+        ]
         try:
             self.scrape_games()
         except Exception as e:
@@ -93,17 +108,19 @@ class Scoreboard:
     def __repr__(self) -> str:
         return f"Scoreboard(games={self.games})"
 
+    @lru_cache(maxsize=32)
+    def _get_build_id(self, initial_url: str) -> str:
+        """Cache and retrieve build_id to avoid repeated requests"""
+        response = self.session.get(initial_url)
+        json_data = json.loads(re.findall('__NEXT_DATA__" type="application/json">(.*?)</script>', 
+                                        response.text)[0])
+        return json_data['buildId']
+
+    @backoff.on_exception(backoff.expo, requests.exceptions.RequestException, max_tries=3)
     def _fetch_data(self, url: str) -> dict:
-        # List of common user agents
-        user_agents = [
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36',
-            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:123.0) Gecko/20100101 Firefox/123.0',
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36'
-        ]
-        
+        """Improved fetch with retry logic and session reuse"""
         headers = {
-            'User-Agent': random.choice(user_agents),
+            'User-Agent': random.choice(self.user_agents),
             'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
             'Accept-Language': 'en-US,en;q=0.5',
             'Accept-Encoding': 'gzip, deflate, br',
@@ -117,34 +134,55 @@ class Scoreboard:
             'Cache-Control': 'max-age=0',
         }
         
-        # Randomized delay between 1-4 seconds with some microsecond variation
-        # time.sleep(random.uniform(1.0, 4.0))
-        
-        response = requests.get(url, headers=headers)
-        if response.status_code != 200:
-            time.sleep(random.uniform(2.0, 5.0))  # Additional delay on failure
-            response = requests.get(url, headers=headers)  # One retry
-        
+        response = self.session.get(url, headers=headers)
+        response.raise_for_status()
         return response.json()
+
+    async def _fetch_all_data(self, base_url: str, date: str) -> Tuple[dict, dict, dict]:
+        """Fetch all data concurrently"""
+        async with aiohttp.ClientSession() as session:
+            tasks = [
+                self._async_fetch(session, f"{base_url}.json?league={SPORT_DICT[self.sport]}&date={date}"),
+                self._async_fetch(session, f"{base_url}/money-line/full-game.json?league={SPORT_DICT[self.sport]}&oddsType=money-line&oddsScope=full-game&date={date}"),
+                self._async_fetch(session, f"{base_url}/totals/full-game.json?league={SPORT_DICT[self.sport]}&oddsType=totals&oddsScope=full-game&date={date}")
+            ]
+            print("First url:", f"{base_url}.json?league={SPORT_DICT[self.sport]}&date={date}")
+            print("totals url:", f"{base_url}/totals/full-game.json?league={SPORT_DICT[self.sport]}&oddsType=totals&oddsScope=full-game&date={date}")
+            spreads, moneylines, totals = await asyncio.gather(*tasks)
+            return spreads, moneylines, totals
+
+    async def _async_fetch(self, session: aiohttp.ClientSession, url: str) -> dict:
+        """Helper method for async fetching"""
+        headers = {'User-Agent': random.choice(self.user_agents)}
+        async with session.get(url, headers=headers) as response:
+            return await response.json()
 
     def _process_game_rows(self, json_data: dict) -> Dict[str, dict]:
         game_list = []
         for item in json_data['pageProps']['oddsTables']:
+            print(item)
             game_list.extend(item['oddsTableModel']['gameRows'])
         return {g['gameView']['gameId']: g for g in game_list}
 
     def scrape_games(self):
-        date = self.date or datetime.today().strftime("%Y-%m-%d")
+        date = self.date or (datetime.today() - timedelta(days=1)).strftime("%Y-%m-%d")
         line_type = 'currentLine' if self.current_line else 'openingLine'
 
         initial_url = f"https://www.sportsbookreview.com/betting-odds/{SPORT_DICT[self.sport]}/?date={date}"
-        build_id = json.loads(re.findall('__NEXT_DATA__" type="application/json">(.*?)</script>', 
-                                       requests.get(initial_url).text)[0])['buildId']
-
+        build_id = self._get_build_id(initial_url)
         base_url = f"https://www.sportsbookreview.com/_next/data/{build_id}/betting-odds/{SPORT_DICT[self.sport]}"
-        spreads = self._process_game_rows(self._fetch_data(f"{base_url}.json?league={SPORT_DICT[self.sport]}&date={date}"))
-        moneylines = self._process_game_rows(self._fetch_data(f"{base_url}/money-line/full-game.json?league={SPORT_DICT[self.sport]}&oddsType=money-line&oddsScope=full-game&date={date}"))
-        totals = self._process_game_rows(self._fetch_data(f"{base_url}/totals/full-game.json?league={SPORT_DICT[self.sport]}&oddsType=totals&oddsScope=full-game&date={date}"))
+
+        # Use asyncio to fetch data concurrently
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        spreads_data, moneylines_data, totals_data = loop.run_until_complete(
+            self._fetch_all_data(base_url, date)
+        )
+        loop.close()
+
+        spreads = self._process_game_rows(spreads_data)
+        moneylines = self._process_game_rows(moneylines_data)
+        totals = self._process_game_rows(totals_data)
 
         all_stats = {
             game_id: {'spreads': spreads[game_id], 'moneylines': moneylines[game_id], 'totals': totals[game_id]}
@@ -208,3 +246,18 @@ class Scoreboard:
             elif (game.home_team.full_name == away_team and game.away_team.full_name == home_team):
                 return {f"{away_team}vs{home_team}": (game.away_score, game.home_score)}
         return {}
+
+
+def main():
+    # Get tomorrow's totals for NBA
+    print("\nNBA Tomorrow's Game Totals:")
+    nba_board = Scoreboard(sport="NBA", days_ahead=0)
+    print(nba_board.get_totals())
+    
+    # Get tomorrow's totals for NHL
+    print("\nNHL Tomorrow's Game Totals:")
+    nhl_board = Scoreboard(sport="NHL", days_ahead=0)
+    print(nhl_board.get_totals())
+
+if __name__ == "__main__":
+    main()
