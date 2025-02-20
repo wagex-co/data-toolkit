@@ -1,2 +1,1 @@
-# oddsgetter
-get odds
+# Everything regarding fetching sports data
