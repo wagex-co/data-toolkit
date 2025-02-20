@@ -1,0 +1,3610 @@
+{
+    "English Premier League": {
+        "league_data": {
+            "name": "English Premier League",
+            "sportdb_id": "4328",
+            "alternate_name": "Premier League, EPL",
+            "sport": "Soccer",
+            "country": "England",
+            "website": "www.premierleague.com",
+            "facebook": "xen-gb.facebook.com/premierleague/",
+            "twitter": "twitter.com/premierleague",
+            "youtube": "www.youtube.com/channel/UCG5qGWdu8nIRZqJ_GgDwQ-w",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/xe1es51638921786.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/gasy9d1737743125.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/4c377s1535214890.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/9a6kw51689108793.png",
+            "formed_year": "1992",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "Premier League"
+        },
+        "Arsenal": {
+            "id": "133604",
+            "alternate_names": [
+                "Arsenal Football Club",
+                " AFC",
+                " Arsenal FC"
+            ],
+            "short_name": "ARS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+            "espns_name": "Arsenal"
+        },
+        "Aston Villa": {
+            "id": "133601",
+            "alternate_names": [
+                "Aston Villa FC"
+            ],
+            "short_name": "AVL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png",
+            "espns_name": "Aston Villa"
+        },
+        "Bournemouth": {
+            "id": "134301",
+            "alternate_names": [
+                "AFC Bournemouth",
+                " Athletic Football Club Bournemouth"
+            ],
+            "short_name": "BOU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
+            "espns_name": "Bournemouth"
+        },
+        "Brentford": {
+            "id": "134355",
+            "alternate_names": [
+                "Brentford Football Club",
+                " Brentford FC",
+                " BFC"
+            ],
+            "short_name": "BRE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/grv1aw1546453779.png",
+            "espns_name": "Brentford"
+        },
+        "Brighton": {
+            "id": "133619",
+            "alternate_names": [
+                "Brighton & Hove Albion",
+                " Brighton and Hove Albion"
+            ],
+            "short_name": "BRI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ywypts1448810904.png",
+            "espns_name": "Brighton"
+        },
+        "Chelsea": {
+            "id": "133610",
+            "alternate_names": [
+                "Chelsea FC"
+            ],
+            "short_name": "CHE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yvwvtu1448813215.png",
+            "espns_name": "Chelsea"
+        },
+        "Crystal Palace": {
+            "id": "133632",
+            "alternate_names": [
+                "Palace"
+            ],
+            "short_name": "CRY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ia6i3m1656014992.png",
+            "espns_name": "Crystal Palace"
+        },
+        "Everton": {
+            "id": "133615",
+            "alternate_names": [
+                "Everton FC"
+            ],
+            "short_name": "EVE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/eqayrf1523184794.png",
+            "espns_name": "Everton"
+        },
+        "Fulham": {
+            "id": "133600",
+            "alternate_names": [
+                "Fulham FC"
+            ],
+            "short_name": "FUL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xwwvyt1448811086.png",
+            "espns_name": "Fulham"
+        },
+        "Ipswich": {
+            "id": "133622",
+            "alternate_names": [
+                "Ipswich Town"
+            ],
+            "short_name": "IPS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mdj1ey1634670785.png",
+            "espns_name": "Ipswich"
+        },
+        "Leicester": {
+            "id": "133626",
+            "alternate_names": [
+                "Leicester City"
+            ],
+            "short_name": "LEI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xtxwtu1448813356.png",
+            "espns_name": "Leicester"
+        },
+        "Liverpool": {
+            "id": "133602",
+            "alternate_names": [
+                "Liverpool FC"
+            ],
+            "short_name": "LIV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+            "espns_name": "Liverpool"
+        },
+        "Manchester City": {
+            "id": "133613",
+            "alternate_names": [
+                "Man City"
+            ],
+            "short_name": "MCI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+            "espns_name": "Manchester City"
+        },
+        "Manchester United": {
+            "id": "133612",
+            "alternate_names": [
+                "Man Utd"
+            ],
+            "short_name": "MUN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+            "espns_name": "Manchester United"
+        },
+        "Newcastle": {
+            "id": "134777",
+            "alternate_names": [
+                "Newcastle United"
+            ],
+            "short_name": "NEW",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
+            "espns_name": "Newcastle"
+        },
+        "Nottingham Forest": {
+            "id": "133720",
+            "alternate_names": [
+                "Nott Forest"
+            ],
+            "short_name": "NOT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bk4qjs1546440351.png",
+            "espns_name": "Nottingham Forest"
+        },
+        "Southampton": {
+            "id": "134778",
+            "alternate_names": [
+                "Southampton FC"
+            ],
+            "short_name": "SOU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ggqtd01621593274.png",
+            "espns_name": "Southampton"
+        },
+        "Tottenham": {
+            "id": "133616",
+            "alternate_names": [
+                "Tottenham Hotspur"
+            ],
+            "short_name": "TOT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
+            "espns_name": "Tottenham"
+        },
+        "West Ham": {
+            "id": "133636",
+            "alternate_names": [
+                "West Ham United"
+            ],
+            "short_name": "WHU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yutyxs1467459956.png",
+            "espns_name": "West Ham"
+        },
+        "Wolves": {
+            "id": "133599",
+            "alternate_names": [
+                "Wolverhampton Wanderers FC"
+            ],
+            "short_name": "WOL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/u9qr031621593327.png",
+            "espns_name": "Wolves"
+        }
+    },
+    "La Liga": {
+        "league_data": {
+            "name": "Spanish La Liga",
+            "sportdb_id": "4335",
+            "alternate_name": "LaLiga Santander, La Liga",
+            "sport": "Soccer",
+            "country": "Spain",
+            "website": "www.laliga.com",
+            "facebook": "www.facebook.com/LaLiga",
+            "twitter": "twitter.com/laliga",
+            "youtube": "www.youtube.com/user/laliga",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/ua8q901726416940.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/ja4it51687628717.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/gq4b1r1687707889.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/vc2z6q1684416521.png",
+            "formed_year": "1929",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "La Liga"
+        },
+        "Alaves": {
+            "id": "134221",
+            "alternate_names": [
+                "Deportivo Alav\u00e9s"
+            ],
+            "short_name": "ALA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mfn99h1734673842.png",
+            "espns_name": "Alaves"
+        },
+        "Athletic Bilbao": {
+            "id": "133727",
+            "alternate_names": [
+                "Ath Bilbao"
+            ],
+            "short_name": "ATH",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+            "espns_name": "Athletic Club"
+        },
+        "Atletico Madrid": {
+            "id": "133729",
+            "alternate_names": [
+                "Ath Madrid"
+            ],
+            "short_name": "ATM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+            "espns_name": "Atl\u00e9tico Madrid"
+        },
+        "Barcelona": {
+            "id": "133739",
+            "alternate_names": [
+                "FC Barcelona"
+            ],
+            "short_name": "FCB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
+            "espns_name": "Barcelona"
+        },
+        "Celta Vigo": {
+            "id": "133937",
+            "alternate_names": [
+                "Celta de Vigo"
+            ],
+            "short_name": "VIG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xfjtku1690436219.png",
+            "espns_name": "Celta Vigo"
+        },
+        "Espanyol": {
+            "id": "133734",
+            "alternate_names": [
+                "Espanol",
+                " RCDE",
+                " RCD Espanyol"
+            ],
+            "short_name": "ESP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/867nzz1681703222.png",
+            "espns_name": "Espanyol"
+        },
+        "Getafe": {
+            "id": "133731",
+            "alternate_names": [
+                "Getafe",
+                " Getafe Club de F\u00fatbol"
+            ],
+            "short_name": "GET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/eyh2891655594452.png",
+            "espns_name": "Getafe"
+        },
+        "Girona": {
+            "id": "134700",
+            "alternate_names": [
+                "Girona"
+            ],
+            "short_name": "GIR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kfu7zu1659897499.png",
+            "espns_name": "Girona"
+        },
+        "Las Palmas": {
+            "id": "134259",
+            "alternate_names": [
+                "Las Palmas"
+            ],
+            "short_name": "PAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mmhyb11616443601.png",
+            "espns_name": "Las Palmas"
+        },
+        "Leganes": {
+            "id": "134701",
+            "alternate_names": [
+                "Club Deportivo Legan\u00e9s",
+                " CD Legan\u00e9s"
+            ],
+            "short_name": "LEG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tm0adr1616443898.png",
+            "espns_name": "Leganes"
+        },
+        "Mallorca": {
+            "id": "133733",
+            "alternate_names": [
+                "Real Mallorca"
+            ],
+            "short_name": "MLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ssptsx1473503730.png",
+            "espns_name": "Mallorca"
+        },
+        "Osasuna": {
+            "id": "133730",
+            "alternate_names": [
+                "Osasuna",
+                " Club Atl\u00e9tico Osasuna",
+                " CA Osasuna"
+            ],
+            "short_name": "OSA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rvspvt1473502960.png",
+            "espns_name": "Osasuna"
+        },
+        "Real Betis": {
+            "id": "133722",
+            "alternate_names": [
+                "Betis"
+            ],
+            "short_name": "BET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2oqulv1663245386.png",
+            "espns_name": "Real Betis"
+        },
+        "Real Madrid": {
+            "id": "133738",
+            "alternate_names": [
+                "Real Madrid"
+            ],
+            "short_name": "MAD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+            "espns_name": "Real Madrid"
+        },
+        "Real Sociedad": {
+            "id": "133724",
+            "alternate_names": [
+                "Sociedad"
+            ],
+            "short_name": "SOC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
+            "espns_name": "Real Sociedad"
+        },
+        "Sevilla": {
+            "id": "133735",
+            "alternate_names": [
+                "Sevilla F\u00fatbol Club",
+                " SFC"
+            ],
+            "short_name": "SEV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vpsqqx1473502977.png",
+            "espns_name": "Sevilla"
+        },
+        "Valencia": {
+            "id": "133725",
+            "alternate_names": [
+                "Valencia"
+            ],
+            "short_name": "VAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/dm8l6o1655594864.png",
+            "espns_name": "Valencia"
+        },
+        "Valladolid": {
+            "id": "133841",
+            "alternate_names": [
+                "Real Valladolid"
+            ],
+            "short_name": "VAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bnhu8b1719983736.png",
+            "espns_name": "Valladolid"
+        },
+        "Vallecano": {
+            "id": "133728",
+            "alternate_names": [
+                "Rayo Vallecano de Madrid"
+            ],
+            "short_name": "RAY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
+            "espns_name": "Vallecano"
+        },
+        "Villarreal": {
+            "id": "133740",
+            "alternate_names": [
+                "Villareal",
+                " Villarreal Club de F\u00fatbol",
+                " Villarreal CF",
+                " Vila-real",
+                " VCF"
+            ],
+            "short_name": "VLR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vrypqy1473503073.png",
+            "espns_name": "Villarreal"
+        }
+    },
+    "Bundesliga": {
+        "league_data": {
+            "name": "German Bundesliga",
+            "sportdb_id": "4331",
+            "alternate_name": "Bundesliga, Fu\u00dfball-Bundesliga",
+            "sport": "Soccer",
+            "country": "Germany",
+            "website": "www.bundesliga.com/en",
+            "facebook": "www.facebook.com/BundesligaOfficial",
+            "twitter": "twitter.com/bundesliga_en",
+            "youtube": "www.youtube.com/user/bundesliga",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/uhbja71659859626.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/teqh1b1679952008.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/620ayu1534764709.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/0o56hs1684416407.png",
+            "formed_year": "1963",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "Bundesliga"
+        },
+        "Bayer Leverkusen": {
+            "id": "133666",
+            "alternate_names": [
+                "Bayer 04 Leverkusen",
+                " Bayer Leverkusen"
+            ],
+            "short_name": "B04",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3x9k851726760113.png",
+            "espns_name": "Bayer Leverkusen"
+        },
+        "Bayern Munich": {
+            "id": "133664",
+            "alternate_names": [
+                "FC Bayern M\u00fcnchen"
+            ],
+            "short_name": "BAY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/01ogkh1716960412.png",
+            "espns_name": "Bayern Munich"
+        },
+        "Bochum": {
+            "id": "133839",
+            "alternate_names": [
+                "VfL Bochum"
+            ],
+            "short_name": "BOC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kag3jy1599821108.png",
+            "espns_name": "Bochum"
+        },
+        "Borussia Dortmund": {
+            "id": "133650",
+            "alternate_names": [
+                "Dortmund"
+            ],
+            "short_name": "DOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tqo8ge1716960353.png",
+            "espns_name": "Borussia Dortmund"
+        },
+        "Borussia M\u00f6nchengladbach": {
+            "id": "134779",
+            "alternate_names": [
+                "M\u00f6nchengladbach"
+            ],
+            "short_name": "BMG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/sysurw1473453380.png",
+            "espns_name": "Borussia Monchengladbach"
+        },
+        "Eintracht Frankfurt": {
+            "id": "133814",
+            "alternate_names": [
+                "Ein Frankfurt"
+            ],
+            "short_name": "SGE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
+            "espns_name": "Eintracht Frankfurt"
+        },
+        "FC Augsburg": {
+            "id": "133652",
+            "alternate_names": [
+                "Augsburg"
+            ],
+            "short_name": "AUG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqyyvq1473453233.png",
+            "espns_name": "FC Augsburg"
+        },
+        "FC Heidenheim": {
+            "id": "134696",
+            "alternate_names": [
+                "1. FC Heidenheim 1846"
+            ],
+            "short_name": "HEI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lbj7g01608236988.png",
+            "espns_name": "FC Heidenheim"
+        },
+        "Freiburg": {
+            "id": "133653",
+            "alternate_names": [
+                "Sport-Club Freiburg"
+            ],
+            "short_name": "SCF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/urwtup1473453288.png",
+            "espns_name": "SC Freiburg"
+        },
+        "Hoffenheim": {
+            "id": "133657",
+            "alternate_names": [
+                "TSG 1899 Hoffenheim"
+            ],
+            "short_name": "TSG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/9hwvb21621593919.png",
+            "espns_name": "TSG Hoffenheim"
+        },
+        "Holstein Kiel": {
+            "id": "136027",
+            "alternate_names": [
+                "KSV Holstein"
+            ],
+            "short_name": "HK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/1fpmgs1514394524.png",
+            "espns_name": "Holstein Kiel"
+        },
+        "Mainz": {
+            "id": "133665",
+            "alternate_names": [
+                "FSV Mainz 05"
+            ],
+            "short_name": null,
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/fhm9v51552134916.png",
+            "espns_name": "Mainz"
+        },
+        "RB Leipzig": {
+            "id": "134695",
+            "alternate_names": [
+                "RasenBallsport Leipzig"
+            ],
+            "short_name": "RBL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/zjgapo1594244951.png",
+            "espns_name": "RB Leipzig"
+        },
+        "St Pauli": {
+            "id": "133813",
+            "alternate_names": [
+                "FC St. Pauli"
+            ],
+            "short_name": "FCP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/5qupxa1608237013.png",
+            "espns_name": "St Pauli"
+        },
+        "Stuttgart": {
+            "id": "133660",
+            "alternate_names": [
+                "VfB Stuttgart"
+            ],
+            "short_name": "STU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yppyux1473454085.png",
+            "espns_name": "Stuttgart"
+        },
+        "Union Berlin": {
+            "id": "134690",
+            "alternate_names": [
+                "1. FC Union Berlin"
+            ],
+            "short_name": "FCU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/q0o5001599679795.png",
+            "espns_name": "Union Berlin"
+        },
+        "Werder Bremen": {
+            "id": "133662",
+            "alternate_names": [
+                "SV Werder Bremen"
+            ],
+            "short_name": "WER",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tkvqan1716960454.png",
+            "espns_name": "Werder Bremen"
+        },
+        "Wolfsburg": {
+            "id": "133655",
+            "alternate_names": [
+                "VfL Wolfsburg",
+                " Verein f\u00fcr Leibes\u00fcbungen Wolfsburg"
+            ],
+            "short_name": null,
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/07kp421599680274.png",
+            "espns_name": "Wolfsburg"
+        }
+    },
+    "Serie A": {
+        "league_data": {
+            "name": "Italian Serie A",
+            "sportdb_id": "4332",
+            "alternate_name": "Serie A",
+            "sport": "Soccer",
+            "country": "Italy",
+            "website": "www.legaseriea.it/it",
+            "facebook": "www.facebook.com/SerieA",
+            "twitter": "twitter.com/SerieA",
+            "youtube": "www.youtube.com/user/legacalcioserieatim",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/oxmop11580643786.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/67q3q21679951383.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/b0hv7o1719640507.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/83l94y1684416466.png",
+            "formed_year": "1929",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "Serie A"
+        },
+        "AC Milan": {
+            "id": "133667",
+            "alternate_names": [
+                "Milan"
+            ],
+            "short_name": "MIL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+            "espns_name": "AC Milan"
+        },
+        "Atalanta": {
+            "id": "134782",
+            "alternate_names": [
+                "Orobici"
+            ],
+            "short_name": "ATA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lrvxg71534873930.png",
+            "espns_name": "Atalanta"
+        },
+        "Bologna": {
+            "id": "134781",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BOL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
+            "espns_name": "Bologna"
+        },
+        "Cagliari": {
+            "id": "134783",
+            "alternate_names": [
+                "Cagliari Calcio",
+                " Cagliari FC",
+                " Casteddu",
+                " Il Sardi",
+                " Sardi"
+            ],
+            "short_name": "CAG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wvsvxt1447534471.png",
+            "espns_name": "Cagliari"
+        },
+        "Como": {
+            "id": "134243",
+            "alternate_names": [
+                "Como 1907"
+            ],
+            "short_name": "COM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/02x81t1627405841.png",
+            "espns_name": "Como"
+        },
+        "Empoli": {
+            "id": "133695",
+            "alternate_names": [
+                "Empoli Football Club"
+            ],
+            "short_name": "EMP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/c1ie6b1622561483.png",
+            "espns_name": "Empoli"
+        },
+        "Fiorentina": {
+            "id": "133674",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "FIO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/hc8nhu1656098030.png",
+            "espns_name": "Fiorentina"
+        },
+        "Genoa": {
+            "id": "133675",
+            "alternate_names": [
+                "Genoa Cricket and Football Club",
+                " Genoa CFC"
+            ],
+            "short_name": "GEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/52s8dn1655553600.png",
+            "espns_name": "Genoa"
+        },
+        "Inter Milan": {
+            "id": "133681",
+            "alternate_names": [
+                "Inter",
+                "Internazionale"
+            ],
+            "short_name": "INT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+            "espns_name": "Internazionale"
+        },
+        "Juventus": {
+            "id": "133676",
+            "alternate_names": [
+                "Juve",
+                " Juventus FC",
+                " La Vecchia Signora",
+                " The Old Lady",
+                " Bianconeri"
+            ],
+            "short_name": "JUV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/fytj241726760465.png",
+            "espns_name": "Juventus"
+        },
+        "Lazio": {
+            "id": "133668",
+            "alternate_names": [
+                "SS Lazio",
+                " Societ\u00e0 Sportiva Lazio",
+                " Biancocelesti"
+            ],
+            "short_name": "LAZ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
+            "espns_name": "Lazio"
+        },
+        "Lecce": {
+            "id": "133678",
+            "alternate_names": [
+                "US Lecce",
+                " Apulia",
+                " Giallorossi"
+            ],
+            "short_name": "LEC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/j4vznr1567365249.png",
+            "espns_name": "Lecce"
+        },
+        "Monza": {
+            "id": "134270",
+            "alternate_names": [
+                "Associazione Calcio Monza",
+                " AC Monza"
+            ],
+            "short_name": "MON",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bxearg1603170113.png",
+            "espns_name": "Monza"
+        },
+        "Napoli": {
+            "id": "133670",
+            "alternate_names": [
+                "S.S.C. Napoli",
+                " SSC Napoli",
+                " Naples",
+                " Gli Azzurri"
+            ],
+            "short_name": "NAP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/89z4qr1720153900.png",
+            "espns_name": "Napoli"
+        },
+        "Parma Calcio 1913": {
+            "id": "135728",
+            "alternate_names": [
+                "Parma Calcio",
+                " AC Parma",
+                " Parma FC. Gialloblu"
+            ],
+            "short_name": "PAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/6yiaxs1627406063.png",
+            "espns_name": "Parma Calcio 1913"
+        },
+        "Roma": {
+            "id": "133682",
+            "alternate_names": [
+                "AS Roma",
+                " FC Roma",
+                " Rome FC",
+                " Giallorossi"
+            ],
+            "short_name": "ROM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqpqpq1448806641.png",
+            "espns_name": "Roma"
+        },
+        "Torino": {
+            "id": "133687",
+            "alternate_names": [
+                "Torino Football Club",
+                " Torino FC"
+            ],
+            "short_name": "TOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xxprty1448806802.png",
+            "espns_name": "Torino"
+        },
+        "Udinese": {
+            "id": "133679",
+            "alternate_names": [
+                "Udinese Calcio",
+                " Bianconeri"
+            ],
+            "short_name": "UDI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vwvstr1448806811.png",
+            "espns_name": "Udinese"
+        },
+        "Venezia": {
+            "id": "134234",
+            "alternate_names": [
+                "Venezia Football Club",
+                " Unione Venezia"
+            ],
+            "short_name": "VEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/95fg4n1656696080.png",
+            "espns_name": "Venezia"
+        },
+        "Verona": {
+            "id": "134784",
+            "alternate_names": [
+                "Hellas Verona Football Club"
+            ],
+            "short_name": "VER",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/p6camf1593457737.png",
+            "espns_name": "Verona"
+        }
+    },
+    "Uefa Champions League": {
+        "league_data": {
+            "name": "UEFA Champions League",
+            "sportdb_id": "4480",
+            "alternate_name": "Champions League, UCL",
+            "sport": "Soccer",
+            "country": "Europe",
+            "website": "uefa.com/uefachampionsleague/index.html",
+            "facebook": "www.facebook.com/championsleague",
+            "twitter": "twitter.com/championsleague",
+            "youtube": "www.youtube.com/uefatv",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/vxp99n1696614859.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/5y7gsj1678720262.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/7pv58v1678720330.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/hq8ka31534962426.png",
+            "formed_year": "1955",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "Champions League"
+        },
+        "AC Milan": {
+            "id": "133667",
+            "alternate_names": [
+                "Milan"
+            ],
+            "short_name": "MIL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wvspur1448806617.png",
+            "espns_name": "AC Milan"
+        },
+        "Apoel Nicosia": {
+            "id": "133999",
+            "alternate_names": [
+                "\u0391\u03a0\u039f\u0395\u039b",
+                " \u0391\u03b8\u03bb\u03b7\u03c4\u03b9\u03ba\u03cc\u03c2 \u03a0\u03bf\u03b4\u03bf\u03c3\u03c6\u03b1\u03b9\u03c1\u03b9\u03ba\u03cc\u03c2 \u038c\u03bc\u03b9\u03bb\u03bf\u03c2 \u0395\u03bb\u03bb\u03ae\u03bd\u03c9\u03bd \u039b\u03b5\u03c5\u03ba\u03c9\u03c3\u03af\u03b1\u03c2",
+                " Lefkosia"
+            ],
+            "short_name": "APO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ccra6l1579035947.png",
+            "espns_name": "Apoel Nicosia"
+        },
+        "Arsenal": {
+            "id": "133604",
+            "alternate_names": [
+                "Arsenal Football Club",
+                " AFC",
+                " Arsenal FC"
+            ],
+            "short_name": "ARS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uyhbfe1612467038.png",
+            "espns_name": "Arsenal"
+        },
+        "Aston Villa": {
+            "id": "133601",
+            "alternate_names": [
+                "Aston Villa FC"
+            ],
+            "short_name": "AVL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/jykrpv1717309891.png",
+            "espns_name": "Aston Villa"
+        },
+        "Atalanta": {
+            "id": "134782",
+            "alternate_names": [
+                "Orobici"
+            ],
+            "short_name": "ATA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lrvxg71534873930.png",
+            "espns_name": "Atalanta"
+        },
+        "Atletico Madrid": {
+            "id": "133729",
+            "alternate_names": [
+                "Ath Madrid"
+            ],
+            "short_name": "ATM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0ulh3q1719984315.png",
+            "espns_name": "Atletico Madrid"
+        },
+        "Ballkani": {
+            "id": "141258",
+            "alternate_names": [
+                "Football Club Ballkani",
+                " Klub Futbollistik Ballkani"
+            ],
+            "short_name": "BAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/y7p62a1617290077.png",
+            "espns_name": "Ballkani"
+        },
+        "Barcelona": {
+            "id": "133739",
+            "alternate_names": [
+                "FC Barcelona"
+            ],
+            "short_name": "FCB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wq9sir1639406443.png",
+            "espns_name": "Barcelona"
+        },
+        "Bayer Leverkusen": {
+            "id": "133666",
+            "alternate_names": [
+                "Bayer 04 Leverkusen",
+                " Bayer Leverkusen"
+            ],
+            "short_name": "B04",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3x9k851726760113.png",
+            "espns_name": "Bayer Leverkusen"
+        },
+        "Bayern Munich": {
+            "id": "133664",
+            "alternate_names": [
+                "FC Bayern M\u00fcnchen"
+            ],
+            "short_name": "BAY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/01ogkh1716960412.png",
+            "espns_name": "Bayern Munich"
+        },
+        "Benfica": {
+            "id": "134108",
+            "alternate_names": [
+                "SL Benfica",
+                " Sport Lisboa e Benfica"
+            ],
+            "short_name": "SLB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0pywy21662316682.png",
+            "espns_name": "Benfica"
+        },
+        "Bod\u00f8/Glimt": {
+            "id": "135497",
+            "alternate_names": [
+                "Bodoe/Glimt"
+            ],
+            "short_name": "BOD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uqpwwx1449165943.png",
+            "espns_name": "Bod\u00f8/Glimt"
+        },
+        "Bologna": {
+            "id": "134781",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BOL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2qi1u31655592366.png",
+            "espns_name": "Bologna"
+        },
+        "Borac Banja Luka": {
+            "id": "137938",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wj4g311579090126.png",
+            "espns_name": "Borac Banja Luka"
+        },
+        "Borussia Dortmund": {
+            "id": "133650",
+            "alternate_names": [
+                "Dortmund"
+            ],
+            "short_name": "DOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tqo8ge1716960353.png",
+            "espns_name": "Borussia Dortmund"
+        },
+        "Brest": {
+            "id": "133704",
+            "alternate_names": [
+                "Stade Brestois 29"
+            ],
+            "short_name": "BRS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/z69be41598797026.png",
+            "espns_name": "Brest"
+        },
+        "Celje": {
+            "id": "134318",
+            "alternate_names": [
+                "Nogometni klub Celje",
+                " NK Celje"
+            ],
+            "short_name": "CEL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/amvs371681106952.png",
+            "espns_name": "Celje"
+        },
+        "Celtic": {
+            "id": "133647",
+            "alternate_names": [
+                "Glasgow Celtic",
+                " The Celtic Football Club",
+                " Celtic FC"
+            ],
+            "short_name": "CEL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tswuut1447597436.png",
+            "espns_name": "Celtic"
+        },
+        "Club Brugge": {
+            "id": "133789",
+            "alternate_names": [
+                "Club Brugge Koninklijke Voetbalvereniging",
+                " Club Brugge KV"
+            ],
+            "short_name": "BRU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ov3w9j1536001717.png",
+            "espns_name": "Club Brugge"
+        },
+        "Crvena Zvezda": {
+            "id": "133987",
+            "alternate_names": [
+                "FK Red Star Belgrade",
+                " \u0424\u0443\u0434\u0431\u0430\u043b\u0441\u043a\u0438 \u043a\u043b\u0443\u0431 \u0426\u0440\u0432\u0435\u043d\u0430 \u0437\u0432\u0435\u0437\u0434\u0430"
+            ],
+            "short_name": null,
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/gz650v1567023440.png",
+            "espns_name": "Crvena Zvezda"
+        },
+        "De\u010di\u0107": {
+            "id": "140118",
+            "alternate_names": [
+                "\u0424\u041a \u0414\u0435\u0447\u0438\u045b",
+                " FK De\u010di\u0107",
+                " Fudbalski klub De\u010di\u0107 Tuzi"
+            ],
+            "short_name": "DEC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/khom7w1721284656.png",
+            "espns_name": "De\u010di\u0107"
+        },
+        "Dinamo Batumi": {
+            "id": "138043",
+            "alternate_names": [
+                "FC Dinamo Batumi"
+            ],
+            "short_name": "DBA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3npx941579289150.png",
+            "espns_name": "Dinamo Batumi"
+        },
+        "Dinamo Minsk": {
+            "id": "137902",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "DIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/8qt7b91655742503.png",
+            "espns_name": "Dinamo Minsk"
+        },
+        "Dinamo Zagreb": {
+            "id": "133961",
+            "alternate_names": [
+                "Gra\u0111anski nogometni klub Dinamo Zagreb",
+                " GNK Dinamo Zagreb",
+                " "
+            ],
+            "short_name": "DZA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/araidi1579955395.png",
+            "espns_name": "Dinamo Zagreb"
+        },
+        "Dynamo Kiev": {
+            "id": "133944",
+            "alternate_names": [
+                "Football Club Dynamo Kyiv",
+                " \u0424\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u0438\u0439 \u041a\u043b\u0443\u0431 \u0414\u0438\u043d\u0430\u043c\u043e \u041a\u0438\u0457\u0432"
+            ],
+            "short_name": "DYN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/stxrpx1447696362.png",
+            "espns_name": "Dynamo Kiev"
+        },
+        "Egnatia": {
+            "id": "140667",
+            "alternate_names": [
+                "Futboll Klub Egnatia Rrogozhin\u00eb",
+                " KF Egnatia"
+            ],
+            "short_name": "EGN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/4tufos1639086825.png",
+            "espns_name": "Egnatia"
+        },
+        "FC 03 Differdange": {
+            "id": "134064",
+            "alternate_names": [
+                "Foussballclub D\u00e9ifferdeng 03"
+            ],
+            "short_name": "DIF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/micxvx1513257944.png",
+            "espns_name": "FC 03 Differdange"
+        },
+        "FC Midtjylland": {
+            "id": "133891",
+            "alternate_names": [
+                "Midtjylland"
+            ],
+            "short_name": "MID",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vptqvr1473535525.png",
+            "espns_name": "FC Midtjylland"
+        },
+        "FC Twente": {
+            "id": "133774",
+            "alternate_names": [
+                "Football Club Twente"
+            ],
+            "short_name": "TWE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rsrxrt1473534783.png",
+            "espns_name": "FC Twente"
+        },
+        "FCSB": {
+            "id": "134005",
+            "alternate_names": [
+                "Steaua Bucuresti"
+            ],
+            "short_name": "FCS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/r7w3d01625317356.png",
+            "espns_name": "FCSB"
+        },
+        "Fenerbahce": {
+            "id": "133807",
+            "alternate_names": [
+                "Fenerbah\u00e7e Spor Kul\u00fcb\u00fc"
+            ],
+            "short_name": "FEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/twxxvs1448199691.png",
+            "espns_name": "Fenerbahce"
+        },
+        "Ferencvaros": {
+            "id": "134620",
+            "alternate_names": [
+                "Ferencv\u00e1rosi Torna Club",
+                " Ferencv\u00e1ros TC"
+            ],
+            "short_name": "FER",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wk17od1688115265.png",
+            "espns_name": "Ferencvaros"
+        },
+        "Feyenoord": {
+            "id": "133758",
+            "alternate_names": [
+                "Feyenoord Rotterdam"
+            ],
+            "short_name": "FEY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uturtx1473534803.png",
+            "espns_name": "Feyenoord"
+        },
+        "FK Panev\u0117\u017eys": {
+            "id": "137993",
+            "alternate_names": [
+                "Futbolo Klubas Panev\u0117\u017eys",
+                " Ekranas"
+            ],
+            "short_name": "FKP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/roci9r1579201885.png",
+            "espns_name": "FK Panev\u0117\u017eys"
+        },
+        "Flora Tallinn": {
+            "id": "133967",
+            "alternate_names": [
+                "FC Flora Tallinn"
+            ],
+            "short_name": "FLO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/h6owfp1615405396.png",
+            "espns_name": "Flora Tallinn"
+        },
+        "Galatasaray": {
+            "id": "133804",
+            "alternate_names": [
+                "Galatasaray Spor Kul\u00fcb\u00fc",
+                " Galatasaray SK"
+            ],
+            "short_name": "GAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/75fphr1537381190.png",
+            "espns_name": "Galatasaray"
+        },
+        "Girona": {
+            "id": "134700",
+            "alternate_names": [
+                "Girona"
+            ],
+            "short_name": "GIR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kfu7zu1659897499.png",
+            "espns_name": "Girona"
+        },
+        "\u0126amrun Spartans": {
+            "id": "138133",
+            "alternate_names": [
+                "\u0126amrun Spartans Football Club",
+                " \t\u0126amrun Spartans FC",
+                " \tHamrun Spartans FC"
+            ],
+            "short_name": "Ham",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mmqcjl1579535584.png",
+            "espns_name": "\u0126amrun Spartans"
+        },
+        "HJK Helsinki": {
+            "id": "133953",
+            "alternate_names": [
+                "Helsingin Jalkapalloklubi"
+            ],
+            "short_name": "HJK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/n7towl1615757839.png",
+            "espns_name": "HJK Helsinki"
+        },
+        "Inter Milan": {
+            "id": "133681",
+            "alternate_names": [
+                "Inter"
+            ],
+            "short_name": "INT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
+            "espns_name": "Inter Milan"
+        },
+        "Jagiellonia Bialystok": {
+            "id": "135297",
+            "alternate_names": [
+                "Jagiellonia"
+            ],
+            "short_name": "JAG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ucze1y1601404699.png",
+            "espns_name": "Jagiellonia Bialystok"
+        },
+        "Juventus": {
+            "id": "133676",
+            "alternate_names": [
+                "Juve",
+                " Juventus FC",
+                " La Vecchia Signora",
+                " The Old Lady",
+                " Bianconeri"
+            ],
+            "short_name": "JUV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/fytj241726760465.png",
+            "espns_name": "Juventus"
+        },
+        "K\u00cd Klaksv\u00edk": {
+            "id": "138051",
+            "alternate_names": [
+                "Klaksv\u00edkar \u00cdtr\u00f3ttarfelag"
+            ],
+            "short_name": "KLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/4vq0i41579294709.png",
+            "espns_name": "K\u00cd Klaksv\u00edk"
+        },
+        "Larne": {
+            "id": "138007",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "LAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/pg8k1v1615586095.png",
+            "espns_name": "Larne"
+        },
+        "Lille": {
+            "id": "133711",
+            "alternate_names": [
+                "Lille OSC"
+            ],
+            "short_name": "LIL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2giize1534005340.png",
+            "espns_name": "Lille"
+        },
+        "Lincoln Red Imps": {
+            "id": "140040",
+            "alternate_names": [
+                "Lincoln Red Imps Football Club"
+            ],
+            "short_name": "LRI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/w1d87s1594393899.png",
+            "espns_name": "Lincoln Red Imps"
+        },
+        "Liverpool": {
+            "id": "133602",
+            "alternate_names": [
+                "Liverpool FC"
+            ],
+            "short_name": "LIV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kfaher1737969724.png",
+            "espns_name": "Liverpool"
+        },
+        "Ludogorets Razgrad": {
+            "id": "133981",
+            "alternate_names": [
+                "\u041b\u0443\u0434\u043e\u0433\u043e\u0440\u0435\u0446 \u0420\u0430\u0437\u0433\u0440\u0430\u0434",
+                " \u041e\u0440\u043b\u0438\u0442\u0435"
+            ],
+            "short_name": "LUD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/flyvu91726166684.png",
+            "espns_name": "Ludogorets Razgrad"
+        },
+        "Lugano": {
+            "id": "136037",
+            "alternate_names": [
+                "Football Club Lugano"
+            ],
+            "short_name": "LUG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2kh2if1567615581.png",
+            "espns_name": "Lugano"
+        },
+        "Maccabi Tel Aviv": {
+            "id": "134315",
+            "alternate_names": [
+                "MTAFC",
+                " FCMTA",
+                " \u05de\u05d5\u05e2\u05d3\u05d5\u05df \u05db\u05d3\u05d5\u05e8\u05d2\u05dc \u05de\u05db\u05d1\u05d9 \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1"
+            ],
+            "short_name": "MTA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lh08ob1625167121.png",
+            "espns_name": "Maccabi Tel Aviv"
+        },
+        "Malmo FF": {
+            "id": "134166",
+            "alternate_names": [
+                "Di bl\u00e5e",
+                " Malm\u00f6 Fotbollf\u00f6rening",
+                " Malm\u00f6 FF",
+                " Malmo FF"
+            ],
+            "short_name": "MAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wvvuqs1420764546.png",
+            "espns_name": "Malmo FF"
+        },
+        "Manchester City": {
+            "id": "133613",
+            "alternate_names": [
+                "Man City"
+            ],
+            "short_name": "MCI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vwpvry1467462651.png",
+            "espns_name": "Manchester City"
+        },
+        "Monaco": {
+            "id": "133823",
+            "alternate_names": [
+                "AS Monaco"
+            ],
+            "short_name": "MON",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/exjf5l1678808044.png",
+            "espns_name": "Monaco"
+        },
+        "Napoli": {
+            "id": "133670",
+            "alternate_names": [
+                "S.S.C. Napoli",
+                " SSC Napoli",
+                " Naples",
+                " Gli Azzurri"
+            ],
+            "short_name": "NAP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/89z4qr1720153900.png",
+            "espns_name": "Napoli"
+        },
+        "Ordabasy Shymkent": {
+            "id": "134077",
+            "alternate_names": [
+                "\u041e\u0440\u0434\u0430\u0431\u0430\u0441\u044b \u0424\u0443\u0442\u0431\u043e\u043b \u041a\u043b\u0443\u0431\u044b",
+                " Ordabasy F\u00fdtbol Kl\u00fdby"
+            ],
+            "short_name": "ORD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lfwd2m1717398455.png",
+            "espns_name": "Ordabasy Shymkent"
+        },
+        "PAOK": {
+            "id": "133749",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "PAO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/m15zsh1602774126.png",
+            "espns_name": "PAOK"
+        },
+        "Paris SG": {
+            "id": "133714",
+            "alternate_names": [
+                "Paris Saint-Germain",
+                " PSG",
+                " Paris Saint Germain"
+            ],
+            "short_name": "PSG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
+            "espns_name": "Paris SG"
+        },
+        "Partizan Belgrade": {
+            "id": "133960",
+            "alternate_names": [
+                "\u0424\u0443\u0434\u0431\u0430\u043b\u0441\u043a\u0438 \u043a\u043b\u0443\u0431 \u041f\u0430\u0440\u0442\u0438\u0437\u0430\u043d",
+                " \u0424\u043a \u041f\u0430\u0440\u0442\u0438\u0437\u0430\u043d",
+                " Partizan Beograd"
+            ],
+            "short_name": "PAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uzb0cf1503235068.png",
+            "espns_name": "Partizan Belgrade"
+        },
+        "Petrocub H\u00eence\u0219ti": {
+            "id": "138123",
+            "alternate_names": [
+                "\tClub Sportiv Petrocub H\u00eence\u0219ti"
+            ],
+            "short_name": "PET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2cs53s1690868408.png",
+            "espns_name": "Petrocub H\u00eence\u0219ti"
+        },
+        "PSV Eindhoven": {
+            "id": "133768",
+            "alternate_names": [
+                "Philips Sport Vereniging"
+            ],
+            "short_name": "PSV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xfsz6i1721297428.png",
+            "espns_name": "PSV Eindhoven"
+        },
+        "Pyunik Yerevan": {
+            "id": "137896",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "PYU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/h8jwvd1579003944.png",
+            "espns_name": "Pyunik Yerevan"
+        },
+        "Qarabag FK": {
+            "id": "135702",
+            "alternate_names": [
+                "Qaraba\u011f FK",
+                " QRB",
+                " Atl\u0131lar"
+            ],
+            "short_name": "QAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/f9h2by1725001244.png",
+            "espns_name": "Qarabag FK"
+        },
+        "Rangers": {
+            "id": "133642",
+            "alternate_names": [
+                "Glasgow Rangers Football Club",
+                " Glasgow Rangers FC"
+            ],
+            "short_name": "RFC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ti24j61614290048.png",
+            "espns_name": "Rangers"
+        },
+        "RB Leipzig": {
+            "id": "134695",
+            "alternate_names": [
+                "RasenBallsport Leipzig"
+            ],
+            "short_name": "RBL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/zjgapo1594244951.png",
+            "espns_name": "RB Leipzig"
+        },
+        "Real Madrid": {
+            "id": "133738",
+            "alternate_names": [
+                "Real Madrid"
+            ],
+            "short_name": "MAD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vwvwrw1473502969.png",
+            "espns_name": "Real Madrid"
+        },
+        "Red Bull Salzburg": {
+            "id": "133970",
+            "alternate_names": [
+                "FC Red Bull Salzburg"
+            ],
+            "short_name": "RBS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xy1m6m1576416143.png",
+            "espns_name": "Red Bull Salzburg"
+        },
+        "RFS": {
+            "id": "137985",
+            "alternate_names": [
+                "R\u012bgas Futbola Skola"
+            ],
+            "short_name": "RFS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/cep7qg1644854951.png",
+            "espns_name": "RFS"
+        },
+        "Shakhtar Donetsk": {
+            "id": "134126",
+            "alternate_names": [
+                " Shakhtar Donestk",
+                " \u0424\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u0438\u0439 \u043a\u043b\u0443\u0431 \u0428\u0430\u0445\u0442\u0430\u0301\u0440 \u0414\u043e\u043d\u0435\u0446\u044c\u043a"
+            ],
+            "short_name": "SHK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/sqrxsr1421791799.png",
+            "espns_name": "Shakhtar Donetsk"
+        },
+        "Shamrock Rovers": {
+            "id": "133978",
+            "alternate_names": [
+                "Shamrock"
+            ],
+            "short_name": "SHR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/u1zowj1491504381.png",
+            "espns_name": "Shamrock Rovers"
+        },
+        "Slavia Prague": {
+            "id": "136036",
+            "alternate_names": [
+                "Sportovn\u00ed klub Slavia Praha"
+            ],
+            "short_name": "SLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/6ywh321718287104.png",
+            "espns_name": "Slavia Prague"
+        },
+        "Slovan Bratislava": {
+            "id": "134090",
+            "alternate_names": [
+                "\u0160K Slovan Bratislava"
+            ],
+            "short_name": "SLB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/i8t4xx1520797048.png",
+            "espns_name": "Slovan Bratislava"
+        },
+        "Sparta Prague": {
+            "id": "134007",
+            "alternate_names": [
+                "Athletic Club Sparta Praha",
+                " AC Sparta Praha"
+            ],
+            "short_name": "SPA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/j00qct1718287150.png",
+            "espns_name": "Sparta Prague"
+        },
+        "Sporting CP": {
+            "id": "135708",
+            "alternate_names": [
+                "Sporting Lisbon",
+                " Sporting Clube de Portugal"
+            ],
+            "short_name": "SLI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ohj6ih1628855978.png",
+            "espns_name": "Sporting CP"
+        },
+        "Struga": {
+            "id": "138074",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "STG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/9ol54t1717398191.png",
+            "espns_name": "Struga"
+        },
+        "Sturm Graz": {
+            "id": "137743",
+            "alternate_names": [
+                "Sportklub Puntigamer Sturm Graz",
+                " SK Sturm Graz",
+                " Die Schwoazn"
+            ],
+            "short_name": "STG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ppg0j71578585847.png",
+            "espns_name": "Sturm Graz"
+        },
+        "Stuttgart": {
+            "id": "133660",
+            "alternate_names": [
+                "VfB Stuttgart"
+            ],
+            "short_name": "STU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yppyux1473454085.png",
+            "espns_name": "Stuttgart"
+        },
+        "TNS": {
+            "id": "134312",
+            "alternate_names": [
+                "The New Saints Oswestry",
+                " TNS Oswestry",
+                " Total Network Solutions",
+                " The New Saints of Oswestry Town & Llansantffraid Football Club"
+            ],
+            "short_name": "TNS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rxbv2i1689313887.png",
+            "espns_name": "TNS"
+        },
+        "UE Santa Coloma": {
+            "id": "134032",
+            "alternate_names": [
+                "Uni\u00f3 Esportiva Santa Coloma"
+            ],
+            "short_name": "USC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/adcqi31678028194.png",
+            "espns_name": "UE Santa Coloma"
+        },
+        "Union Saint-Gilloise": {
+            "id": "138141",
+            "alternate_names": [
+                "St. Gilloise"
+            ],
+            "short_name": "USG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ljszp41654601742.png",
+            "espns_name": "Union Saint-Gilloise"
+        },
+        "V\u00edkingur Reykjav\u00edk": {
+            "id": "137974",
+            "alternate_names": [
+                "Knattspyrnuf\u00e9lagi\u00f0 V\u00edkingur"
+            ],
+            "short_name": "VIK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/srhq2w1579111270.png",
+            "espns_name": "V\u00edkingur Reykjav\u00edk"
+        },
+        "Virtus": {
+            "id": "138086",
+            "alternate_names": [
+                "SS Virtus"
+            ],
+            "short_name": "VIR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2c3exd1717398070.png",
+            "espns_name": "Virtus"
+        },
+        "Young Boys": {
+            "id": "134001",
+            "alternate_names": [
+                "BSC Young Boys",
+                " Young Boys Bern",
+                " Berner"
+            ],
+            "short_name": "YB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/9mxdoo1534784569.png",
+            "espns_name": "Young Boys"
+        }
+    },
+    "Uefa Europa League": {
+        "league_data": {
+            "name": "UEFA Europa League",
+            "sportdb_id": "4481",
+            "alternate_name": "Europa League, UEL",
+            "sport": "Soccer",
+            "country": "Europe",
+            "website": "www.uefa.com/uefaeuropaleague/index.html",
+            "facebook": "www.facebook.com/europaleague",
+            "twitter": "twitter.com/EuropaLeague",
+            "youtube": "www.youtube.com/uefatv",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/opjw7l1718777604.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/mlsr7d1718774547.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/b8uhfh1718774548.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/1gdpeq1534962460.png",
+            "formed_year": "1971",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "Europa League"
+        },
+        "Ajax": {
+            "id": "133772",
+            "alternate_names": [
+                "AFC Ajax",
+                " Ajax Amsterdam"
+            ],
+            "short_name": "AJA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uvzy1d1721297408.png",
+            "espns_name": "Ajax"
+        },
+        "Anderlecht": {
+            "id": "133776",
+            "alternate_names": [
+                "RSCA",
+                " Royal Sporting Club Anderlecht"
+            ],
+            "short_name": "AND",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/blk65s1691182512.png",
+            "espns_name": "Anderlecht"
+        },
+        "Apoel Nicosia": {
+            "id": "133999",
+            "alternate_names": [
+                "\u0391\u03a0\u039f\u0395\u039b",
+                " \u0391\u03b8\u03bb\u03b7\u03c4\u03b9\u03ba\u03cc\u03c2 \u03a0\u03bf\u03b4\u03bf\u03c3\u03c6\u03b1\u03b9\u03c1\u03b9\u03ba\u03cc\u03c2 \u038c\u03bc\u03b9\u03bb\u03bf\u03c2 \u0395\u03bb\u03bb\u03ae\u03bd\u03c9\u03bd \u039b\u03b5\u03c5\u03ba\u03c9\u03c3\u03af\u03b1\u03c2",
+                " Lefkosia"
+            ],
+            "short_name": "APO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ccra6l1579035947.png",
+            "espns_name": "Apoel Nicosia"
+        },
+        "Athletic Bilbao": {
+            "id": "133727",
+            "alternate_names": [
+                "Ath Bilbao"
+            ],
+            "short_name": "ATH",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/68w7fe1639408210.png",
+            "espns_name": "Athletic Bilbao"
+        },
+        "AZ Alkmaar": {
+            "id": "133767",
+            "alternate_names": [
+                "Alkmaar Zaanstreek"
+            ],
+            "short_name": "AZA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wtqwvv1473534757.png",
+            "espns_name": "AZ Alkmaar"
+        },
+        "Besiktas": {
+            "id": "133794",
+            "alternate_names": [
+                "Be\u015fikta\u015f JK"
+            ],
+            "short_name": "BES",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/cg07mt1679455607.png",
+            "espns_name": "Besiktas"
+        },
+        "Bod\u00f8/Glimt": {
+            "id": "135497",
+            "alternate_names": [
+                "Bodoe/Glimt"
+            ],
+            "short_name": "BOD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uqpwwx1449165943.png",
+            "espns_name": "Bod\u00f8/Glimt"
+        },
+        "Borac Banja Luka": {
+            "id": "137938",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wj4g311579090126.png",
+            "espns_name": "Borac Banja Luka"
+        },
+        "Botev Plovdiv": {
+            "id": "134343",
+            "alternate_names": [
+                "PFC Botev Plovdiv",
+                " \u0411\u043e\u0442\u0435\u0432 \u041f\u043b\u043e\u0432\u0434\u0438\u0432"
+            ],
+            "short_name": "BOT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/owfvww1512067986.png",
+            "espns_name": "Botev Plovdiv"
+        },
+        "Braga": {
+            "id": "134098",
+            "alternate_names": [
+                "SC Braga"
+            ],
+            "short_name": "BRA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/8g4aod1678717261.png",
+            "espns_name": "Braga"
+        },
+        "Celje": {
+            "id": "134318",
+            "alternate_names": [
+                "Nogometni klub Celje",
+                " NK Celje"
+            ],
+            "short_name": "CEL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/amvs371681106952.png",
+            "espns_name": "Celje"
+        },
+        "Cercle Brugge": {
+            "id": "133782",
+            "alternate_names": [
+                "Cercle Brugge Koninklijke Sportvereniging",
+                " Cercle Brugge KSV"
+            ],
+            "short_name": "CER",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0v6uv41656017321.png",
+            "espns_name": "Cercle Brugge"
+        },
+        "Corvinul Hunedoara": {
+            "id": "147629",
+            "alternate_names": [
+                "Clubul Sportiv Corvinul 1921 Hunedoara",
+                " CS Corvinul 1921 Hunedoara",
+                " Clubul Sportiv Corvinul Hunedoara",
+                " CS Corvinul Hunedoara"
+            ],
+            "short_name": "COR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/4xsvhl1690278556.png",
+            "espns_name": "Corvinul Hunedoara"
+        },
+        "Dinamo Minsk": {
+            "id": "137902",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "DIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/8qt7b91655742503.png",
+            "espns_name": "Dinamo Minsk"
+        },
+        "Dynamo Kiev": {
+            "id": "133944",
+            "alternate_names": [
+                "Football Club Dynamo Kyiv",
+                " \u0424\u0443\u0442\u0431\u043e\u043b\u044c\u043d\u0438\u0439 \u041a\u043b\u0443\u0431 \u0414\u0438\u043d\u0430\u043c\u043e \u041a\u0438\u0457\u0432"
+            ],
+            "short_name": "DYN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/stxrpx1447696362.png",
+            "espns_name": "Dynamo Kiev"
+        },
+        "Eintracht Frankfurt": {
+            "id": "133814",
+            "alternate_names": [
+                "Ein Frankfurt"
+            ],
+            "short_name": "SGE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rurwpy1473453269.png",
+            "espns_name": "Eintracht Frankfurt"
+        },
+        "Elfsborg": {
+            "id": "133984",
+            "alternate_names": [
+                "Idrottsf\u00f6reningen Elfsborg",
+                " IF Elfsborg"
+            ],
+            "short_name": "ELF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/svqvqq1421957626.png",
+            "espns_name": "Elfsborg"
+        },
+        "FC Midtjylland": {
+            "id": "133891",
+            "alternate_names": [
+                "Midtjylland"
+            ],
+            "short_name": "MID",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vptqvr1473535525.png",
+            "espns_name": "FC Midtjylland"
+        },
+        "FC Porto": {
+            "id": "134114",
+            "alternate_names": [
+                "Porto"
+            ],
+            "short_name": "POR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xu47rb1628855600.png",
+            "espns_name": "FC Porto"
+        },
+        "FC Twente": {
+            "id": "133774",
+            "alternate_names": [
+                "Football Club Twente"
+            ],
+            "short_name": "TWE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rsrxrt1473534783.png",
+            "espns_name": "FC Twente"
+        },
+        "FCSB": {
+            "id": "134005",
+            "alternate_names": [
+                "Steaua Bucuresti"
+            ],
+            "short_name": "FCS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/r7w3d01625317356.png",
+            "espns_name": "FCSB"
+        },
+        "Fenerbahce": {
+            "id": "133807",
+            "alternate_names": [
+                "Fenerbah\u00e7e Spor Kul\u00fcb\u00fc"
+            ],
+            "short_name": "FEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/twxxvs1448199691.png",
+            "espns_name": "Fenerbahce"
+        },
+        "Ferencvaros": {
+            "id": "134620",
+            "alternate_names": [
+                "Ferencv\u00e1rosi Torna Club",
+                " Ferencv\u00e1ros TC"
+            ],
+            "short_name": "FER",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wk17od1688115265.png",
+            "espns_name": "Ferencvaros"
+        },
+        "FK Panev\u0117\u017eys": {
+            "id": "137993",
+            "alternate_names": [
+                "Futbolo Klubas Panev\u0117\u017eys",
+                " Ekranas"
+            ],
+            "short_name": "FKP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/roci9r1579201885.png",
+            "espns_name": "FK Panev\u0117\u017eys"
+        },
+        "Galatasaray": {
+            "id": "133804",
+            "alternate_names": [
+                "Galatasaray Spor Kul\u00fcb\u00fc",
+                " Galatasaray SK"
+            ],
+            "short_name": "GAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/75fphr1537381190.png",
+            "espns_name": "Galatasaray"
+        },
+        "Hearts": {
+            "id": "133643",
+            "alternate_names": [
+                "Heart of Midlothian"
+            ],
+            "short_name": "HEA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/twqvyt1447597939.png",
+            "espns_name": "Hearts"
+        },
+        "Hoffenheim": {
+            "id": "133657",
+            "alternate_names": [
+                "TSG 1899 Hoffenheim"
+            ],
+            "short_name": "HOF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/9hwvb21621593919.png",
+            "espns_name": "Hoffenheim"
+        },
+        "Jagiellonia Bialystok": {
+            "id": "135297",
+            "alternate_names": [
+                "Jagiellonia"
+            ],
+            "short_name": "JAG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ucze1y1601404699.png",
+            "espns_name": "Jagiellonia Bialystok"
+        },
+        "K\u00cd Klaksv\u00edk": {
+            "id": "138051",
+            "alternate_names": [
+                "Klaksv\u00edkar \u00cdtr\u00f3ttarfelag"
+            ],
+            "short_name": "KLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/4vq0i41579294709.png",
+            "espns_name": "K\u00cd Klaksv\u00edk"
+        },
+        "Kilmarnock": {
+            "id": "133645",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "KIL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xssqtu1447596951.png",
+            "espns_name": "Kilmarnock"
+        },
+        "Kryvbas Kryvyi Rih": {
+            "id": "142826",
+            "alternate_names": [
+                "FC Kryvbas Kryvyi Rih",
+                " \u041a\u0440\u0438\u0432\u0431\u0430\u0441 \u041a\u0440\u0438\u0432\u0438\u0439 \u0420\u0456\u0433",
+                " Hirnyk Kryvyi Rih"
+            ],
+            "short_name": "KRY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2e11ks1681107496.png",
+            "espns_name": "Kryvbas Kryvyi Rih"
+        },
+        "LASK": {
+            "id": "137261",
+            "alternate_names": [
+                "Linzer Athletik-Sport-Klub",
+                " LASK Linz",
+                " Linz"
+            ],
+            "short_name": "LAS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/oox26l1683556395.png",
+            "espns_name": "LASK"
+        },
+        "Lazio": {
+            "id": "133668",
+            "alternate_names": [
+                "SS Lazio",
+                " Societ\u00e0 Sportiva Lazio",
+                " Biancocelesti"
+            ],
+            "short_name": "LAZ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rwqyvs1448806608.png",
+            "espns_name": "Lazio"
+        },
+        "Lincoln Red Imps": {
+            "id": "140040",
+            "alternate_names": [
+                "Lincoln Red Imps Football Club"
+            ],
+            "short_name": "LRI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/w1d87s1594393899.png",
+            "espns_name": "Lincoln Red Imps"
+        },
+        "Llapi": {
+            "id": "141261",
+            "alternate_names": [
+                "KF Llapi",
+                " Klubi Futbollistik Llapi"
+            ],
+            "short_name": "LLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/fw1o5q1617290095.png",
+            "espns_name": "Llapi"
+        },
+        "Ludogorets Razgrad": {
+            "id": "133981",
+            "alternate_names": [
+                "\u041b\u0443\u0434\u043e\u0433\u043e\u0440\u0435\u0446 \u0420\u0430\u0437\u0433\u0440\u0430\u0434",
+                " \u041e\u0440\u043b\u0438\u0442\u0435"
+            ],
+            "short_name": "LUD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/flyvu91726166684.png",
+            "espns_name": "Ludogorets Razgrad"
+        },
+        "Lugano": {
+            "id": "136037",
+            "alternate_names": [
+                "Football Club Lugano"
+            ],
+            "short_name": "LUG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2kh2if1567615581.png",
+            "espns_name": "Lugano"
+        },
+        "Lyon": {
+            "id": "133713",
+            "alternate_names": [
+                "Olympique Lyonnais"
+            ],
+            "short_name": "LYO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/blk9771656932845.png",
+            "espns_name": "Lyon"
+        },
+        "Maccabi Petach Tikva": {
+            "id": "135998",
+            "alternate_names": [
+                "Maccabi Avshalom Ironi Petah Tikva Football Club",
+                " \u05de\u05d5\u05e2\u05d3\u05d5\u05df \u05e1\u05e4\u05d5\u05e8\u05d8 \u05de\u05db\u05d1\u05d9 \u05d0\u05d1\u05e9\u05dc\u05d5\u05dd \u05e2\u05d9\u05e8\u05d5\u05e0\u05d9 \u05e4\u05ea\u05d7 \u05ea\u05e7\u05d5\u05d5\u05d4"
+            ],
+            "short_name": "MPT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3bvby91720417514.png",
+            "espns_name": "Maccabi Petach Tikva"
+        },
+        "Maccabi Tel Aviv": {
+            "id": "134315",
+            "alternate_names": [
+                "MTAFC",
+                " FCMTA",
+                " \u05de\u05d5\u05e2\u05d3\u05d5\u05df \u05db\u05d3\u05d5\u05e8\u05d2\u05dc \u05de\u05db\u05d1\u05d9 \u05ea\u05dc \u05d0\u05d1\u05d9\u05d1"
+            ],
+            "short_name": "MTA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lh08ob1625167121.png",
+            "espns_name": "Maccabi Tel Aviv"
+        },
+        "Malmo FF": {
+            "id": "134166",
+            "alternate_names": [
+                "Di bl\u00e5e",
+                " Malm\u00f6 Fotbollf\u00f6rening",
+                " Malm\u00f6 FF",
+                " Malmo FF"
+            ],
+            "short_name": "MAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wvvuqs1420764546.png",
+            "espns_name": "Malmo FF"
+        },
+        "Manchester United": {
+            "id": "133612",
+            "alternate_names": [
+                "Man Utd"
+            ],
+            "short_name": "MUN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xzqdr11517660252.png",
+            "espns_name": "Manchester United"
+        },
+        "MFK Ru\u017eomberok": {
+            "id": "137871",
+            "alternate_names": [
+                "Mestsk\u00fd futbalov\u00fd klub Ru\u017eomberok",
+                " Ruza"
+            ],
+            "short_name": "RUZ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vuqyby1578947692.png",
+            "espns_name": "MFK Ru\u017eomberok"
+        },
+        "Molde": {
+            "id": "133958",
+            "alternate_names": [
+                "MFK"
+            ],
+            "short_name": "MOL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/apziyg1534866527.png",
+            "espns_name": "Molde"
+        },
+        "Nice": {
+            "id": "133712",
+            "alternate_names": [
+                "OGC Nice"
+            ],
+            "short_name": "NIC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/msy7ly1621593859.png",
+            "espns_name": "Nice"
+        },
+        "NK Maribor": {
+            "id": "133948",
+            "alternate_names": [
+                "Nogometni klub Maribor"
+            ],
+            "short_name": "MAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/asikxb1515929142.png",
+            "espns_name": "NK Maribor"
+        },
+        "Olympiakos": {
+            "id": "133754",
+            "alternate_names": [
+                "\u03a0\u0391\u0395 \u039f\u03bb\u03c5\u03bc\u03c0\u03b9\u03b1\u03ba\u03cc\u03c2 \u03a3.\u03a6.\u03a0",
+                " Olympiacos Piraeus",
+                " Olympiakos Piraeus"
+            ],
+            "short_name": "OLY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xckasq1721291508.png",
+            "espns_name": "Olympiakos"
+        },
+        "Pafos FC": {
+            "id": "137928",
+            "alternate_names": [
+                "\u03a0\u03ac\u03c6\u03bf\u03c2",
+                " Paphos"
+            ],
+            "short_name": "PAF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xom9xf1579036010.png",
+            "espns_name": "Pafos FC"
+        },
+        "Paksi FC": {
+            "id": "138185",
+            "alternate_names": [
+                "Paks",
+                " "
+            ],
+            "short_name": "PAK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kos9hc1604523576.png",
+            "espns_name": "Paksi FC"
+        },
+        "Panathinaikos": {
+            "id": "133746",
+            "alternate_names": [
+                "\u03a0\u03b1\u03bd\u03b1\u03b8\u03b7\u03bd\u03b1\u03ca\u03ba\u03cc\u03c2"
+            ],
+            "short_name": "PAO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vtpwwt1448208397.png",
+            "espns_name": "Panathinaikos"
+        },
+        "PAOK": {
+            "id": "133749",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "PAO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/m15zsh1602774126.png",
+            "espns_name": "PAOK"
+        },
+        "Partizan Belgrade": {
+            "id": "133960",
+            "alternate_names": [
+                "\u0424\u0443\u0434\u0431\u0430\u043b\u0441\u043a\u0438 \u043a\u043b\u0443\u0431 \u041f\u0430\u0440\u0442\u0438\u0437\u0430\u043d",
+                " \u0424\u043a \u041f\u0430\u0440\u0442\u0438\u0437\u0430\u043d",
+                " Partizan Beograd"
+            ],
+            "short_name": "PAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uzb0cf1503235068.png",
+            "espns_name": "Partizan Belgrade"
+        },
+        "Petrocub H\u00eence\u0219ti": {
+            "id": "138123",
+            "alternate_names": [
+                "\tClub Sportiv Petrocub H\u00eence\u0219ti"
+            ],
+            "short_name": "PET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2cs53s1690868408.png",
+            "espns_name": "Petrocub H\u00eence\u0219ti"
+        },
+        "Qarabag FK": {
+            "id": "135702",
+            "alternate_names": [
+                "Qaraba\u011f FK",
+                " QRB",
+                " Atl\u0131lar"
+            ],
+            "short_name": "QAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/f9h2by1725001244.png",
+            "espns_name": "Qarabag FK"
+        },
+        "Rangers": {
+            "id": "133642",
+            "alternate_names": [
+                "Glasgow Rangers Football Club",
+                " Glasgow Rangers FC"
+            ],
+            "short_name": "RFC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ti24j61614290048.png",
+            "espns_name": "Rangers"
+        },
+        "Rapid Vienna": {
+            "id": "134021",
+            "alternate_names": [
+                "Sportklub Rapid Wien",
+                " SK Rapid Wien",
+                " Wein",
+                " Gr\u00fcn-Wei\u00dfen"
+            ],
+            "short_name": "RAP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wxvdn91686619560.png",
+            "espns_name": "Rapid Vienna"
+        },
+        "Real Sociedad": {
+            "id": "133724",
+            "alternate_names": [
+                "Sociedad"
+            ],
+            "short_name": "SOC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vptvpr1473502986.png",
+            "espns_name": "Real Sociedad"
+        },
+        "RFS": {
+            "id": "137985",
+            "alternate_names": [
+                "R\u012bgas Futbola Skola"
+            ],
+            "short_name": "RFS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/cep7qg1644854951.png",
+            "espns_name": "RFS"
+        },
+        "Rijeka": {
+            "id": "134399",
+            "alternate_names": [
+                "Hrvatski Nogometni Klub Rijeka",
+                " HNK Rijeka"
+            ],
+            "short_name": "RIJ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/z8bxvi1603310975.png",
+            "espns_name": "Rijeka"
+        },
+        "Roma": {
+            "id": "133682",
+            "alternate_names": [
+                "AS Roma",
+                " FC Roma",
+                " Rome FC",
+                " Giallorossi"
+            ],
+            "short_name": "ROM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqpqpq1448806641.png",
+            "espns_name": "Roma"
+        },
+        "Servette": {
+            "id": "133991",
+            "alternate_names": [
+                "Servette FC",
+                " Geveva",
+                " Geneve"
+            ],
+            "short_name": "SER",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/440wv71692206330.png",
+            "espns_name": "Servette"
+        },
+        "Shamrock Rovers": {
+            "id": "133978",
+            "alternate_names": [
+                "Shamrock"
+            ],
+            "short_name": "SHR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/u1zowj1491504381.png",
+            "espns_name": "Shamrock Rovers"
+        },
+        "Sheriff Tiraspol": {
+            "id": "133962",
+            "alternate_names": [
+                "\u0424\u041a \u0428\u0435\u0440\u0438\u0444 \u0422\u0438\u0440\u0430\u0441\u043f\u043e\u043b\u044c"
+            ],
+            "short_name": "SHE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/byrtix1662316319.png",
+            "espns_name": "Sheriff Tiraspol"
+        },
+        "Silkeborg IF": {
+            "id": "133892",
+            "alternate_names": [
+                "Silkeborg Idr\u00e6tsforening"
+            ],
+            "short_name": "SIF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tpxvvp1473535560.png",
+            "espns_name": "Silkeborg IF"
+        },
+        "Slavia Prague": {
+            "id": "136036",
+            "alternate_names": [
+                "Sportovn\u00ed klub Slavia Praha"
+            ],
+            "short_name": "SLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/6ywh321718287104.png",
+            "espns_name": "Slavia Prague"
+        },
+        "TNS": {
+            "id": "134312",
+            "alternate_names": [
+                "The New Saints Oswestry",
+                " TNS Oswestry",
+                " Total Network Solutions",
+                " The New Saints of Oswestry Town & Llansantffraid Football Club"
+            ],
+            "short_name": "TNS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rxbv2i1689313887.png",
+            "espns_name": "TNS"
+        },
+        "Tobol": {
+            "id": "138042",
+            "alternate_names": [
+                "FC Tobol",
+                " \u0422\u043e\u0431\u044b\u043b \u0424\u0443\u0442\u0431\u043e\u043b \u041a\u043b\u0443\u0431\u044b",
+                " Tobyl F\u00fdtbol Kl\u00fdby"
+            ],
+            "short_name": "TOB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ui3dfq1579285060.png",
+            "espns_name": "Tobol"
+        },
+        "Tottenham": {
+            "id": "133616",
+            "alternate_names": [
+                "Tottenham Hotspur"
+            ],
+            "short_name": "TOT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
+            "espns_name": "Tottenham"
+        },
+        "Trabzonspor": {
+            "id": "133796",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "TRA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/43oobe1672951178.png",
+            "espns_name": "Trabzonspor"
+        },
+        "TSC Ba\u010dka Topola": {
+            "id": "137856",
+            "alternate_names": [
+                "TSC Ba\u010dka Topola"
+            ],
+            "short_name": "TSC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/1bnnu81703173169.png",
+            "espns_name": "TSC Ba\u010dka Topola"
+        },
+        "UE Santa Coloma": {
+            "id": "134032",
+            "alternate_names": [
+                "Uni\u00f3 Esportiva Santa Coloma"
+            ],
+            "short_name": "USC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/adcqi31678028194.png",
+            "espns_name": "UE Santa Coloma"
+        },
+        "Union Saint-Gilloise": {
+            "id": "138141",
+            "alternate_names": [
+                "St. Gilloise"
+            ],
+            "short_name": "USG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ljszp41654601742.png",
+            "espns_name": "Union Saint-Gilloise"
+        },
+        "Viktoria Plzen": {
+            "id": "134015",
+            "alternate_names": [
+                "Football Club Viktoria Plze\u0148",
+                " FC Viktoria Plze\u0148"
+            ],
+            "short_name": "VPL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/at8i2h1679265942.png",
+            "espns_name": "Viktoria Plzen"
+        },
+        "Vojvodina": {
+            "id": "134022",
+            "alternate_names": [
+                "FK Vojvodina",
+                " \u0424\u0443\u0434\u0431\u0430\u043b\u0441\u043a\u0438 \u043a\u043b\u0443\u0431 \u0412\u043e\u0458\u0432\u043e\u0434\u0438\u043d\u0430",
+                " \u0424\u043a \u0412\u043e\u0458\u0432\u043e\u0434\u0438\u043d\u0430",
+                " \u041d\u043e\u0432\u0438 \u0421\u0430\u0434",
+                " Novi Sad"
+            ],
+            "short_name": "VOJ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/adh59u1703173053.png",
+            "espns_name": "Vojvodina"
+        },
+        "Wisla Krakow": {
+            "id": "135303",
+            "alternate_names": [
+                "Wis\u0142a Krak\u00f3w Sp\u00f3\u0142ka Akcyjna"
+            ],
+            "short_name": "WIS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/hctds11709146583.png",
+            "espns_name": "Wisla Krakow"
+        },
+        "Zira FK": {
+            "id": "138340",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "ZIR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/db1o7v1580055971.png",
+            "espns_name": "Zira FK"
+        }
+    },
+    "NFL": {
+        "league_data": {
+            "name": "NFL",
+            "sportdb_id": "4391",
+            "alternate_name": "NFL",
+            "sport": "American Football",
+            "country": "United States",
+            "website": "www.nfl.com",
+            "facebook": "www.facebook.com/NFL",
+            "twitter": "twitter.com/nfl",
+            "youtube": "www.youtube.com/user/NFL",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/w0rbro1567703618.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/g85fqz1662057187.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/kp1www1565195936.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/dj7wvr1684417088.png",
+            "formed_year": "1920",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "NFL"
+        },
+        "Arizona Cardinals": {
+            "id": "134946",
+            "alternate_names": [
+                "Cardinals"
+            ],
+            "short_name": "ARI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xvuwtw1420646838.png",
+            "espns_name": "Arizona Cardinals"
+        },
+        "Atlanta Falcons": {
+            "id": "134942",
+            "alternate_names": [
+                "Falcons"
+            ],
+            "short_name": "ATL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rrpvpr1420658174.png",
+            "espns_name": "Atlanta Falcons"
+        },
+        "Baltimore Ravens": {
+            "id": "134922",
+            "alternate_names": [
+                "Ravens"
+            ],
+            "short_name": "BAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/einz3p1546172463.png",
+            "espns_name": "Baltimore Ravens"
+        },
+        "Buffalo Bills": {
+            "id": "134918",
+            "alternate_names": [
+                "Bills"
+            ],
+            "short_name": "BUF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/6pb37b1515849026.png",
+            "espns_name": "Buffalo Bills"
+        },
+        "Carolina Panthers": {
+            "id": "134943",
+            "alternate_names": [
+                "Panthers"
+            ],
+            "short_name": "CAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xxyvvy1420940478.png",
+            "espns_name": "Carolina Panthers"
+        },
+        "Chicago Bears": {
+            "id": "134938",
+            "alternate_names": [
+                "Bears"
+            ],
+            "short_name": "CHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ji22531698678538.png",
+            "espns_name": "Chicago Bears"
+        },
+        "Cincinnati Bengals": {
+            "id": "134923",
+            "alternate_names": [
+                "Bengals"
+            ],
+            "short_name": "CIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qqtwwv1420941670.png",
+            "espns_name": "Cincinnati Bengals"
+        },
+        "Cleveland Browns": {
+            "id": "134924",
+            "alternate_names": [
+                "Browns"
+            ],
+            "short_name": "CLE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/squvxy1420942389.png",
+            "espns_name": "Cleveland Browns"
+        },
+        "Dallas Cowboys": {
+            "id": "134934",
+            "alternate_names": [
+                "Cowboys"
+            ],
+            "short_name": "DAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wrxssu1450018209.png",
+            "espns_name": "Dallas Cowboys"
+        },
+        "Denver Broncos": {
+            "id": "134930",
+            "alternate_names": [
+                "Broncos"
+            ],
+            "short_name": "DEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/upsspx1421635647.png",
+            "espns_name": "Denver Broncos"
+        },
+        "Detroit Lions": {
+            "id": "134939",
+            "alternate_names": [
+                "Lions"
+            ],
+            "short_name": "DET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lgsgkr1546168257.png",
+            "espns_name": "Detroit Lions"
+        },
+        "Green Bay Packers": {
+            "id": "134940",
+            "alternate_names": [
+                "Packers"
+            ],
+            "short_name": "GB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rqpwtr1421434717.png",
+            "espns_name": "Green Bay Packers"
+        },
+        "Houston Texans": {
+            "id": "134926",
+            "alternate_names": [
+                "Texans"
+            ],
+            "short_name": "HOU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wqyryy1421436627.png",
+            "espns_name": "Houston Texans"
+        },
+        "Indianapolis Colts": {
+            "id": "134927",
+            "alternate_names": [
+                "Colts"
+            ],
+            "short_name": "IND",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wqqvpx1421434058.png",
+            "espns_name": "Indianapolis Colts"
+        },
+        "Jacksonville Jaguars": {
+            "id": "134928",
+            "alternate_names": [
+                "Jaguars"
+            ],
+            "short_name": "JAX",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0mrsd41546427902.png",
+            "espns_name": "Jacksonville Jaguars"
+        },
+        "Kansas City Chiefs": {
+            "id": "134931",
+            "alternate_names": [
+                "Chiefs"
+            ],
+            "short_name": "KC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/936t161515847222.png",
+            "espns_name": "Kansas City Chiefs"
+        },
+        "Las Vegas Raiders": {
+            "id": "134932",
+            "alternate_names": [
+                "Raiders"
+            ],
+            "short_name": "LV",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqusqy1421724291.png",
+            "espns_name": "Las Vegas Raiders"
+        },
+        "Los Angeles Chargers": {
+            "id": "135908",
+            "alternate_names": [
+                "Chargers"
+            ],
+            "short_name": "LAC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vrqanp1687734910.png",
+            "espns_name": "Los Angeles Chargers"
+        },
+        "Los Angeles Rams": {
+            "id": "135907",
+            "alternate_names": [
+                "Rams"
+            ],
+            "short_name": "LA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/8e8v4i1599764614.png",
+            "espns_name": "Los Angeles Rams"
+        },
+        "Miami Dolphins": {
+            "id": "134919",
+            "alternate_names": [
+                "Dolphins"
+            ],
+            "short_name": "MIA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/trtusv1421435081.png",
+            "espns_name": "Miami Dolphins"
+        },
+        "Minnesota Vikings": {
+            "id": "134941",
+            "alternate_names": [
+                "Vikings"
+            ],
+            "short_name": "MIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qstqqr1421609163.png",
+            "espns_name": "Minnesota Vikings"
+        },
+        "New England Patriots": {
+            "id": "134920",
+            "alternate_names": [
+                "Patriots"
+            ],
+            "short_name": "NE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xtwxyt1421431860.png",
+            "espns_name": "New England Patriots"
+        },
+        "New Orleans Saints": {
+            "id": "134944",
+            "alternate_names": [
+                "Saints"
+            ],
+            "short_name": "NO",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/nd46c71537821337.png",
+            "espns_name": "New Orleans Saints"
+        },
+        "New York Giants": {
+            "id": "134935",
+            "alternate_names": [
+                "Giants"
+            ],
+            "short_name": "NYG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vxppup1423669459.png",
+            "espns_name": "New York Giants"
+        },
+        "New York Jets": {
+            "id": "134921",
+            "alternate_names": [
+                "Jets"
+            ],
+            "short_name": "NYJ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/hz92od1607953467.png",
+            "espns_name": "New York Jets"
+        },
+        "Philadelphia Eagles": {
+            "id": "134936",
+            "alternate_names": [
+                "Eagles"
+            ],
+            "short_name": "PHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/pnpybf1515852421.png",
+            "espns_name": "Philadelphia Eagles"
+        },
+        "Pittsburgh Steelers": {
+            "id": "134925",
+            "alternate_names": [
+                "Steelers"
+            ],
+            "short_name": "PIT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2975411515853129.png",
+            "espns_name": "Pittsburgh Steelers"
+        },
+        "San Francisco 49ers": {
+            "id": "134948",
+            "alternate_names": [
+                "49ers"
+            ],
+            "short_name": "SF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bqbtg61539537328.png",
+            "espns_name": "San Francisco 49ers"
+        },
+        "Seattle Seahawks": {
+            "id": "134949",
+            "alternate_names": [
+                "Seahawks"
+            ],
+            "short_name": "SEA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wwuqyr1421434817.png",
+            "espns_name": "Seattle Seahawks"
+        },
+        "Tampa Bay Buccaneers": {
+            "id": "134945",
+            "alternate_names": [
+                "Buccaneers"
+            ],
+            "short_name": "TB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2dfpdl1537820969.png",
+            "espns_name": "Tampa Bay Buccaneers"
+        },
+        "Tennessee Titans": {
+            "id": "134929",
+            "alternate_names": [
+                "Titans"
+            ],
+            "short_name": "TEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/m48yia1515847376.png",
+            "espns_name": "Tennessee Titans"
+        },
+        "Washington Commanders": {
+            "id": "134937",
+            "alternate_names": [
+                "Commanders"
+            ],
+            "short_name": "WAS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rn0c7v1643826119.png",
+            "espns_name": "Washington Commanders"
+        }
+    },
+    "NBA": {
+        "league_data": {
+            "name": "NBA",
+            "sportdb_id": "4387",
+            "alternate_name": "National Basketball Association",
+            "sport": "Basketball",
+            "country": "United States",
+            "website": "nba.com",
+            "facebook": "www.facebook.com/nba",
+            "twitter": "twitter.com/nba",
+            "youtube": "www.youtube.com/user/NBA",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/axfzez1714736905.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/frdjqy1536585083.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/ypuryw1421971236.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/797rbc1696441106.png",
+            "formed_year": "1946",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "NBA"
+        },
+        "Atlanta Hawks": {
+            "id": "134880",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "ATL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/q3bx641635067495.png",
+            "espns_name": "Atlanta"
+        },
+        "Boston Celtics": {
+            "id": "134860",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BOS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/4j85bn1667936589.png",
+            "espns_name": "Boston"
+        },
+        "Brooklyn Nets": {
+            "id": "134861",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BKN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/hkafe61739948361.png",
+            "espns_name": "Brooklyn"
+        },
+        "Charlotte Hornets": {
+            "id": "134881",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "CHA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqtvvp1422380623.png",
+            "espns_name": "Charlotte"
+        },
+        "Chicago Bulls": {
+            "id": "134870",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "CHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yk7swg1547214677.png",
+            "espns_name": "Chicago"
+        },
+        "Cleveland Cavaliers": {
+            "id": "134871",
+            "alternate_names": [
+                "Cavs"
+            ],
+            "short_name": "CLE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tys75k1664478652.png",
+            "espns_name": "Cleveland"
+        },
+        "Dallas Mavericks": {
+            "id": "134875",
+            "alternate_names": [
+                "Mavs"
+            ],
+            "short_name": "DAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yqrxrs1420568796.png",
+            "espns_name": "Dallas"
+        },
+        "Denver Nuggets": {
+            "id": "134885",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "DEN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/8o8j5k1546016274.png",
+            "espns_name": "Denver"
+        },
+        "Detroit Pistons": {
+            "id": "134872",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "DET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lg7qrc1621594751.png",
+            "espns_name": "Detroit"
+        },
+        "Golden State Warriors": {
+            "id": "134865",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "GSW",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/irobi61565197527.png",
+            "espns_name": "Golden State"
+        },
+        "Houston Rockets": {
+            "id": "134876",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "HOU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yezpho1597486052.png",
+            "espns_name": "Houston"
+        },
+        "Indiana Pacers": {
+            "id": "134873",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "IND",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/v6jzgm1503741821.png",
+            "espns_name": "Indiana"
+        },
+        "Los Angeles Clippers": {
+            "id": "134866",
+            "alternate_names": [
+                "LA Clippers"
+            ],
+            "short_name": "LAC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3gtb8s1719303125.png",
+            "espns_name": "LA"
+        },
+        "Los Angeles Lakers": {
+            "id": "134867",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "LAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/d8uoxw1714254511.png",
+            "espns_name": "Los Angeles"
+        },
+        "Memphis Grizzlies": {
+            "id": "134877",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "MEM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/m64v461565196789.png",
+            "espns_name": "Memphis"
+        },
+        "Miami Heat": {
+            "id": "134882",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "MIA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/5v67x51547214763.png",
+            "espns_name": "Miami"
+        },
+        "Milwaukee Bucks": {
+            "id": "134874",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "MIL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/olhug01621594702.png",
+            "espns_name": "Milwaukee"
+        },
+        "Minnesota Timberwolves": {
+            "id": "134886",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "MIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/5xpgjg1621594771.png",
+            "espns_name": "Minnesota"
+        },
+        "New Orleans Pelicans": {
+            "id": "134878",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "NOP",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/cak6261696446261.png",
+            "espns_name": "New Orleans"
+        },
+        "New York Knicks": {
+            "id": "134862",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "NYK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wyhpuf1511810435.png",
+            "espns_name": "New York"
+        },
+        "Oklahoma City Thunder": {
+            "id": "134887",
+            "alternate_names": [
+                "OKC Thunder"
+            ],
+            "short_name": "OKC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xpswpq1422575434.png",
+            "espns_name": "Oklahoma City"
+        },
+        "Orlando Magic": {
+            "id": "134883",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "ORL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/f2wcro1696446120.png",
+            "espns_name": "Orlando"
+        },
+        "Philadelphia 76ers": {
+            "id": "134863",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "PHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/71545f1518464849.png",
+            "espns_name": "Philadelphia"
+        },
+        "Phoenix Suns": {
+            "id": "134868",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "PHX",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qrtuxq1422919040.png",
+            "espns_name": "Phoenix"
+        },
+        "Portland Trail Blazers": {
+            "id": "134888",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "POR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ljkd1r1696445959.png",
+            "espns_name": "Portland"
+        },
+        "Sacramento Kings": {
+            "id": "134869",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "SAC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/5d3dpz1611859587.png",
+            "espns_name": "Sacramento"
+        },
+        "San Antonio Spurs": {
+            "id": "134879",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "SAS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/obucan1611859537.png",
+            "espns_name": "San Antonio"
+        },
+        "Toronto Raptors": {
+            "id": "134864",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "TOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ax36vz1635070057.png",
+            "espns_name": "Toronto"
+        },
+        "Utah Jazz": {
+            "id": "134889",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "UTA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ne4a051664478964.png",
+            "espns_name": "Utah"
+        },
+        "Washington Wizards": {
+            "id": "134884",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "WAS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rhxi9w1621594729.png",
+            "espns_name": "Washington"
+        }
+    },
+    "MLB": {
+        "league_data": {
+            "name": "MLB",
+            "sportdb_id": "4424",
+            "alternate_name": "Major League Baseball",
+            "sport": "Baseball",
+            "country": "United States",
+            "website": "mlb.com",
+            "facebook": "www.facebook.com/mlb",
+            "twitter": "twitter.com/mlb",
+            "youtube": "www.youtube.com/user/MLB",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/wgxylj1570730728.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/c5r83j1521893739.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/5g2id01554031836.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/hxyhni1684416906.png",
+            "formed_year": "1869",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "MLB"
+        },
+        "Arizona Diamondbacks": {
+            "id": "135267",
+            "alternate_names": [
+                "Diamondbacks"
+            ],
+            "short_name": "ARI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xe5wlo1713861863.png",
+            "espns_name": "Arizona Diamondbacks"
+        },
+        "Atlanta Braves": {
+            "id": "135268",
+            "alternate_names": [
+                "Braves"
+            ],
+            "short_name": "ATL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yjs76e1617811496.png",
+            "espns_name": "Atlanta Braves"
+        },
+        "Baltimore Orioles": {
+            "id": "135251",
+            "alternate_names": [
+                "Orioles"
+            ],
+            "short_name": "BAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ytywvu1431257088.png",
+            "espns_name": "Baltimore Orioles"
+        },
+        "Boston Red Sox": {
+            "id": "135252",
+            "alternate_names": [
+                "Red Sox"
+            ],
+            "short_name": "BOS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/stpsus1425120215.png",
+            "espns_name": "Boston Red Sox"
+        },
+        "Chicago Cubs": {
+            "id": "135269",
+            "alternate_names": [
+                "Cubs"
+            ],
+            "short_name": "CHC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wxbe071521892391.png",
+            "espns_name": "Chicago Cubs"
+        },
+        "Chicago White Sox": {
+            "id": "135253",
+            "alternate_names": [
+                "White Sox"
+            ],
+            "short_name": "CWS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yyz5dh1554140884.png",
+            "espns_name": "Chicago White Sox"
+        },
+        "Cincinnati Reds": {
+            "id": "135270",
+            "alternate_names": [
+                "Reds"
+            ],
+            "short_name": "CIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wspusr1431538832.png",
+            "espns_name": "Cincinnati Reds"
+        },
+        "Cleveland Guardians": {
+            "id": "135254",
+            "alternate_names": [
+                "Guardians"
+            ],
+            "short_name": "CLE",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3zvzao1640964590.png",
+            "espns_name": "Cleveland Guardians"
+        },
+        "Colorado Rockies": {
+            "id": "135271",
+            "alternate_names": [
+                "Rockies"
+            ],
+            "short_name": "COL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/r7q6ko1687608395.png",
+            "espns_name": "Colorado Rockies"
+        },
+        "Detroit Tigers": {
+            "id": "135255",
+            "alternate_names": [
+                "Tigers"
+            ],
+            "short_name": "DET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/9dib6o1554032173.png",
+            "espns_name": "Detroit Tigers"
+        },
+        "Houston Astros": {
+            "id": "135256",
+            "alternate_names": [
+                "Astros"
+            ],
+            "short_name": "HOU",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/miwigx1521893583.png",
+            "espns_name": "Houston Astros"
+        },
+        "Kansas City Royals": {
+            "id": "135257",
+            "alternate_names": [
+                "Royals"
+            ],
+            "short_name": "KC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ii3rz81554031260.png",
+            "espns_name": "Kansas City Royals"
+        },
+        "Los Angeles Angels": {
+            "id": "135258",
+            "alternate_names": [
+                "Angels"
+            ],
+            "short_name": "LAA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/vswsvx1432577476.png",
+            "espns_name": "Los Angeles Angels"
+        },
+        "Los Angeles Dodgers": {
+            "id": "135272",
+            "alternate_names": [
+                "Dodgers"
+            ],
+            "short_name": "LAD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/p2oj631663889783.png",
+            "espns_name": "Los Angeles Dodgers"
+        },
+        "Miami Marlins": {
+            "id": "135273",
+            "alternate_names": [
+                "Marlins"
+            ],
+            "short_name": "MIA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0722fs1546001701.png",
+            "espns_name": "Miami Marlins"
+        },
+        "Milwaukee Brewers": {
+            "id": "135274",
+            "alternate_names": [
+                "Brewers"
+            ],
+            "short_name": "MIL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/08kh2a1595775193.png",
+            "espns_name": "Milwaukee Brewers"
+        },
+        "Minnesota Twins": {
+            "id": "135259",
+            "alternate_names": [
+                "Twins"
+            ],
+            "short_name": "MIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/necd5v1521905719.png",
+            "espns_name": "Minnesota Twins"
+        },
+        "New York Mets": {
+            "id": "135275",
+            "alternate_names": [
+                "Mets"
+            ],
+            "short_name": "NYM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rxqspq1431540337.png",
+            "espns_name": "New York Mets"
+        },
+        "New York Yankees": {
+            "id": "135260",
+            "alternate_names": [
+                "Yankees"
+            ],
+            "short_name": "NYY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wqwwxx1423478766.png",
+            "espns_name": "New York Yankees"
+        },
+        "Oakland Athletics": {
+            "id": "135261",
+            "alternate_names": [
+                "Athletics"
+            ],
+            "short_name": "OAK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wsxtyw1432577334.png",
+            "espns_name": "Oakland Athletics"
+        },
+        "Philadelphia Phillies": {
+            "id": "135276",
+            "alternate_names": [
+                "Phillies"
+            ],
+            "short_name": "PHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3xrldf1617528682.png",
+            "espns_name": "Philadelphia Phillies"
+        },
+        "Pittsburgh Pirates": {
+            "id": "135277",
+            "alternate_names": [
+                "Pirates"
+            ],
+            "short_name": "PIT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kw6uqr1617527138.png",
+            "espns_name": "Pittsburgh Pirates"
+        },
+        "San Diego Padres": {
+            "id": "135278",
+            "alternate_names": [
+                "Padres"
+            ],
+            "short_name": "SD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/6wt1cn1617527530.png",
+            "espns_name": "San Diego Padres"
+        },
+        "San Francisco Giants": {
+            "id": "135279",
+            "alternate_names": [
+                "Giants"
+            ],
+            "short_name": "SF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mq81yb1521896622.png",
+            "espns_name": "San Francisco Giants"
+        },
+        "Seattle Mariners": {
+            "id": "135262",
+            "alternate_names": [
+                "Mariners"
+            ],
+            "short_name": "SEA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/39x9ph1521903933.png",
+            "espns_name": "Seattle Mariners"
+        },
+        "St. Louis Cardinals": {
+            "id": "135280",
+            "alternate_names": [
+                "Cardinals"
+            ],
+            "short_name": "STL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uvyvyr1424003273.png",
+            "espns_name": "St. Louis Cardinals"
+        },
+        "Tampa Bay Rays": {
+            "id": "135263",
+            "alternate_names": [
+                "Rays"
+            ],
+            "short_name": "TB",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/littyt1554031623.png",
+            "espns_name": "Tampa Bay Rays"
+        },
+        "Texas Rangers": {
+            "id": "135264",
+            "alternate_names": [
+                "Rangers"
+            ],
+            "short_name": "TEX",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qt9qki1521893151.png",
+            "espns_name": "Texas Rangers"
+        },
+        "Toronto Blue Jays": {
+            "id": "135265",
+            "alternate_names": [
+                "Blue Jays"
+            ],
+            "short_name": "TOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/f9zk3l1617527686.png",
+            "espns_name": "Toronto Blue Jays"
+        },
+        "Washington Nationals": {
+            "id": "135281",
+            "alternate_names": [
+                "Nationals"
+            ],
+            "short_name": "WAS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wpqrut1423694764.png",
+            "espns_name": "Washington Nationals"
+        }
+    },
+    "NHL": {
+        "league_data": {
+            "name": "NHL",
+            "sportdb_id": "4380",
+            "alternate_name": "National Hockey League",
+            "sport": "Ice Hockey",
+            "country": "United States",
+            "website": "www.nhl.com",
+            "facebook": "www.facebook.com/NHL",
+            "twitter": "twitter.com/nhl",
+            "youtube": "www.youtube.com/user/NHLVideo",
+            "banner": "https://www.thesportsdb.com/images/media/league/banner/wsvtvu1422290020.jpg",
+            "badge": "https://www.thesportsdb.com/images/media/league/badge/4cem2k1619616539.png",
+            "logo": "https://www.thesportsdb.com/images/media/league/logo/qguaew1557140752.png",
+            "trophy": "https://www.thesportsdb.com/images/media/league/trophy/n7h99t1557140860.png",
+            "formed_year": "1917",
+            "gender": "Male",
+            "strNaming": "{strHomeTeam} vs {strAwayTeam}",
+            "espns_name": "NHL"
+        },
+        "Anaheim Ducks": {
+            "id": "134846",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "ANA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/1d465t1719573796.png",
+            "espns_name": "Anaheim Ducks"
+        },
+        "Boston Bruins": {
+            "id": "134830",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BOS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/b1r86e1720023232.png",
+            "espns_name": "Boston Bruins"
+        },
+        "Buffalo Sabres": {
+            "id": "134831",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "BUF",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/3m3jhp1619536655.png",
+            "espns_name": "Buffalo Sabres"
+        },
+        "Calgary Flames": {
+            "id": "134848",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "CGY",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/v8vkk11619536610.png",
+            "espns_name": "Calgary Flames"
+        },
+        "Carolina Hurricanes": {
+            "id": "134838",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "CAR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/v07m3x1547232585.png",
+            "espns_name": "Carolina Hurricanes"
+        },
+        "Chicago Blackhawks": {
+            "id": "134854",
+            "alternate_names": [
+                "Blackhawks"
+            ],
+            "short_name": "CHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tuwyvr1422041801.png",
+            "espns_name": "Chicago Blackhawks"
+        },
+        "Colorado Avalanche": {
+            "id": "134855",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "COL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wqutut1421173572.png",
+            "espns_name": "Colorado Avalanche"
+        },
+        "Columbus Blue Jackets": {
+            "id": "134839",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "CBJ",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ssytwt1421792535.png",
+            "espns_name": "Columbus Blue Jackets"
+        },
+        "Dallas Stars": {
+            "id": "134856",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "DAL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qrvywq1422042125.png",
+            "espns_name": "Dallas Stars"
+        },
+        "Detroit Red Wings": {
+            "id": "134832",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "DET",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/1c24ow1546544080.png",
+            "espns_name": "Detroit Red Wings"
+        },
+        "Edmonton Oilers": {
+            "id": "134849",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "EDM",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/uxxsyw1421618428.png",
+            "espns_name": "Edmonton Oilers"
+        },
+        "Florida Panthers": {
+            "id": "134833",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "FLA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/8qtaz11547158220.png",
+            "espns_name": "Florida Panthers"
+        },
+        "Los Angeles Kings": {
+            "id": "134852",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "LAK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/w408rg1719220748.png",
+            "espns_name": "Los Angeles Kings"
+        },
+        "Minnesota Wild": {
+            "id": "134857",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "MIN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/swtsxs1422042685.png",
+            "espns_name": "Minnesota Wild"
+        },
+        "Montreal Canadiens": {
+            "id": "134834",
+            "alternate_names": [
+                "Les Habitants",
+                " Canadiens de Montr\u00e9al"
+            ],
+            "short_name": "MTL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/stpryx1421791753.png",
+            "espns_name": "Montreal Canadiens"
+        },
+        "Nashville Predators": {
+            "id": "134858",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "NSH",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/twqyvy1422052908.png",
+            "espns_name": "Nashville Predators"
+        },
+        "New Jersey Devils": {
+            "id": "134840",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "NJD",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/z4rsvp1619536740.png",
+            "espns_name": "New Jersey Devils"
+        },
+        "New York Islanders": {
+            "id": "134841",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "NYI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/hqn8511619536714.png",
+            "espns_name": "New York Islanders"
+        },
+        "New York Rangers": {
+            "id": "134842",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "NYR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bez4251546192693.png",
+            "espns_name": "New York Rangers"
+        },
+        "Ottawa Senators": {
+            "id": "134835",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "OTT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/2tc1qy1619536592.png",
+            "espns_name": "Ottawa Senators"
+        },
+        "Philadelphia Flyers": {
+            "id": "134843",
+            "alternate_names": [
+                "Flyers"
+            ],
+            "short_name": "PHI",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qxxppp1421794965.png",
+            "espns_name": "Philadelphia Flyers"
+        },
+        "Pittsburgh Penguins": {
+            "id": "134844",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "PIT",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/dsj3on1546192477.png",
+            "espns_name": "Pittsburgh Penguins"
+        },
+        "San Jose Sharks": {
+            "id": "134853",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "SJS",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yui7871546193006.png",
+            "espns_name": "San Jose Sharks"
+        },
+        "Seattle Kraken": {
+            "id": "140082",
+            "alternate_names": [
+                "Kraken "
+            ],
+            "short_name": "SEA",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/zsx49m1595775836.png",
+            "espns_name": "Seattle Kraken"
+        },
+        "St. Louis Blues": {
+            "id": "134859",
+            "alternate_names": [
+                "St Louis Blues"
+            ],
+            "short_name": "STL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rsqtwx1422053715.png",
+            "espns_name": "St. Louis Blues"
+        },
+        "Tampa Bay Lightning": {
+            "id": "134836",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "TBL",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/swysut1421791822.png",
+            "espns_name": "Tampa Bay Lightning"
+        },
+        "Toronto Maple Leafs": {
+            "id": "134837",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "TOR",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mxig4p1570129307.png",
+            "espns_name": "Toronto Maple Leafs"
+        },
+        "Utah Hockey Club": {
+            "id": "148494",
+            "alternate_names": [
+                "Utah HC"
+            ],
+            "short_name": "UHC",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/zxfycs1718706518.png",
+            "espns_name": "Utah Hockey Club"
+        },
+        "Vancouver Canucks": {
+            "id": "134850",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "VAN",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqxxpw1421875519.png",
+            "espns_name": "Vancouver Canucks"
+        },
+        "Vegas Golden Knights": {
+            "id": "135913",
+            "alternate_names": [
+                "Las Vegas Golden Knights"
+            ],
+            "short_name": "VGK",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/7fd4521619536689.png",
+            "espns_name": "Vegas Golden Knights"
+        },
+        "Washington Capitals": {
+            "id": "134845",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "WSH",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/99ca9a1638974052.png",
+            "espns_name": "Washington Capitals"
+        },
+        "Winnipeg Jets": {
+            "id": "134851",
+            "alternate_names": [
+                ""
+            ],
+            "short_name": "WPG",
+            "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bwn9hr1547233611.png",
+            "espns_name": "Winnipeg Jets"
+        }
+    }
+}
