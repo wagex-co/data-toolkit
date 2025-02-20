@@ -1,13 +1,13 @@
 import aiohttp
 import logging
 from typing import List, Dict, Tuple, Optional
-from ...utils.types import (
+from utils.types import (
     EventSettlementData, MarketUpdate, EventUpdate, PayoutData,
     UserPayout, PayoutOrder, EventStatus, MarketStatus, MarketOutcome,
     OrderStatus, OrderSide
 )
-from ...config.settings import settings
-from ...utils.utils import earnings_calculator
+from config.settings import settings
+from utils.utils import earnings_calculator
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

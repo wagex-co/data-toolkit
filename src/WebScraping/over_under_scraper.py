@@ -47,11 +47,8 @@ def scrape_over_unders(leagues_data: dict, sources: list = None) -> dict:
 
 def main():
     # Get the project root directory (assuming src is in project root)
-    project_root = Path(__file__).parent.parent.parent
-    data_dir = project_root / "data"
-    
     # Create data directory if it doesn't exist
-    os.makedirs(data_dir, exist_ok=True)
+    os.makedirs("./data", exist_ok=True)
     
     # Generate timestamp for filename
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -65,7 +62,7 @@ def main():
     result = scrape_over_unders(leagues_data)
     
     # Save results with timestamp in data directory
-    output_file = data_dir / f'over_unders_{timestamp}.json'
+    output_file = f'./data/over_unders_{timestamp}.json'
     with open(output_file, 'w') as f:
         json.dump(result, f, indent=4)
 

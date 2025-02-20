@@ -4,10 +4,9 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Optional, Tuple
 import logging
 from dateutil.parser import parse
-
-from ...utils.types import SportsDBEvent, MappedEvent, ApiResponse, EventStatus, MarketType
-from ...config.settings import settings
-from ...utils.market_utils import get_over_under_type
+from utils.types import SportsDBEvent, MappedEvent, ApiResponse, EventStatus, MarketType
+from config.settings import settings
+from utils.market_utils import get_over_under_type
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

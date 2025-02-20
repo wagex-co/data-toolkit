@@ -1,7 +1,6 @@
 from pydantic import BaseModel
 from typing import List, Optional, Dict
 from enum import Enum
-from datetime import datetime
 
 class EventStatus(str, Enum):
     FUTURE = "future"
