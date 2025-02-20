@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     SPORTSDB_API_KEY: str = Field(..., env="SPORTSDB_API_KEY")
     
     # LLM Configuration
-    LLM_MODEL: str = "openai/gpt-4-mini"
+    LLM_MODEL: str = "openai/gpt-4o-mini"
     SCRAPER_CONFIG: Dict = {
         "verbose": True,
         "headless": True,

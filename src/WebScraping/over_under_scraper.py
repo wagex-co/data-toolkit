@@ -1,9 +1,13 @@
+import sys
+from pathlib import Path
+# Add the project root directory to the Python path
+project_root = Path(__file__).resolve().parent.parent.parent
+sys.path.append(str(project_root))
 from scrapegraphai.graphs import SmartScraperMultiGraph
 import json
 from src.config.settings import settings
 from datetime import datetime
 import os
-from pathlib import Path
 
 def scrape_over_unders(leagues_data: dict, sources: list = None) -> dict:
     """
@@ -53,16 +57,15 @@ def main():
     # Generate timestamp for filename
     timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
     
-    # Load leagues data from the same directory as the script
-    script_dir = Path(__file__).parent
-    with open(script_dir / 'leagues_data.json', 'r') as f:
+    script_dir = Path(__file__).parent.parent.parent
+    with open(f'{script_dir}/DATA_MAIN/leagues_data.json', 'r') as f:
         leagues_data = json.load(f)
     
     # Scrape over/under data
-    result = scrape_over_unders(leagues_data)
+    result = scrape_over_unders(leagues_data if leagues_data else None)
     
     # Save results with timestamp in data directory
-    output_file = f'./data/over_unders_{timestamp}.json'
+    output_file = f'./src/WebScraping/data/over_unders_{timestamp}.json'
     with open(output_file, 'w') as f:
         json.dump(result, f, indent=4)
 
