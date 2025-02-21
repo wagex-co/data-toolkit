@@ -20,6 +20,7 @@ class CreateEvents:
     async def get_league_events(
         self, 
         league_id: str, 
+        league_name: str,
         date: str, 
         retry_count: int = 0
     ) -> Optional[ApiResponse]:
@@ -38,7 +39,7 @@ class CreateEvents:
                         logger.info(f"Rate limit hit, attempt {retry_count + 1}/3 - waiting 60 seconds...")
                         await asyncio.sleep(60)
                         self.request_count = 0
-                        return await self.get_league_events(league_id, date, retry_count + 1)
+                        return await self.get_league_events(league_id, league_name, date, retry_count + 1)
                     
                     data = await response.json()
                     return ApiResponse(**data)
@@ -53,7 +54,7 @@ class CreateEvents:
             return EventStatus.ONGOING
         return EventStatus.COMPLETED
 
-    def map_to_events(self, data: List[SportsDBEvent]) -> List[MappedEvent]:
+    def map_to_events(self, data: List[SportsDBEvent], league_name: str) -> List[MappedEvent]:
         mapped_events = []
         for item in data:
             sport = "Football" if item.strSport == "American Football" else item.strSport
@@ -61,7 +62,7 @@ class CreateEvents:
             
             mapped_event = MappedEvent(
                 sport=sport,
-                league=item.strLeague,
+                league=league_name,
                 participants=[item.strHomeTeam, item.strAwayTeam],
                 title=item.strEvent,
                 start=timestamp,
@@ -83,9 +84,10 @@ class CreateEvents:
         dates = [(start + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(days_to_fetch)]
         
         default_lines = {
-            "NFL": "29.5",
+            "NFL": "49.5",
             "Baseball": "8.5",
-            "Basketball": "215",
+            "Basketball": "225",
+            "Hockey": "5.5",
             "default": "2.5",
             **(default_lines or {})
         }
@@ -95,9 +97,9 @@ class CreateEvents:
             logger.info(f"Getting events for {league_name}")
             for date in dates:
                 logger.info(f"Getting events for {date}")
-                response = await self.get_league_events(league_id, date)
+                response = await self.get_league_events(league_id, league_name, date)
                 if response and response.events:
-                    all_events.extend(self.map_to_events(response.events))
+                    all_events.extend(self.map_to_events(response.events, league_name))
 
         logger.info(f"Created {len(all_events)} events")
 

@@ -1,13 +1,13 @@
 import sys
 from pathlib import Path
-# Add the project root directory to the Python path
-project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(project_root))
 from scrapegraphai.graphs import SmartScraperMultiGraph
 import json
 from src.config.settings import settings
 from datetime import datetime
 import os
+# Add the project root directory to the Python path
+project_root = Path(__file__).resolve().parent.parent.parent
+sys.path.append(str(project_root))
 
 def scrape_over_unders(leagues_data: dict, sources: list = None) -> dict:
     """
