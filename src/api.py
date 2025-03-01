@@ -1,0 +1,126 @@
+from flask import Flask, request, jsonify
+import asyncio
+import json
+from pathlib import Path
+import sys
+from datetime import datetime
+
+# Add project root to Python path properly
+project_root = Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(project_root))
+
+# Import the functions to expose via API
+from src.WebScraping.over_under_scraper import scrape_over_unders
+from src.SportsDB.Event_Creation.create_events import create_events
+from src.SportsDB.Event_Settlement.settle_events import settle_events
+
+app = Flask(__name__)
+
+# Helper function to run async functions
+def run_async(coro):
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    try:
+        return loop.run_until_complete(coro)
+    finally:
+        loop.close()
+
+@app.route('/health', methods=['GET'])
+def health_check():
+    """Simple health check endpoint"""
+    return jsonify({"status": "healthy", "timestamp": datetime.now().isoformat()})
+
+@app.route('/scrape-over-unders', methods=['POST'])
+def api_scrape_over_unders():
+    """
+    Endpoint to scrape over/under totals for games
+    
+    Request body should contain:
+    - leagues_data (dict): Dictionary containing league and team information
+    - sources (list, optional): List of URLs to scrape
+    """
+    try:
+        data = request.json
+        leagues_data = data.get('leagues_data', {})
+        sources = data.get('sources', None)
+        
+        # Call the scrape_over_unders function
+        result = scrape_over_unders(leagues_data, sources)
+        
+        # Generate timestamp for response
+        timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+        
+        return jsonify({
+            "status": "success",
+            "timestamp": timestamp,
+            "data": result
+        })
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
+@app.route('/create-events', methods=['POST'])
+def api_create_events():
+    """
+    Endpoint to create events from SportsDB
+    
+    Request body should contain:
+    - leagues (dict): Dictionary mapping league names to SportsDB league IDs
+    - days_to_fetch (int, optional): Number of days to fetch, default is 7
+    - start_date (str, optional): Start date in YYYY-MM-DD format
+    """
+    try:
+        data = request.json
+        leagues = data.get('leagues', {})
+        days_to_fetch = data.get('days_to_fetch', 7)
+        start_date = data.get('start_date', None)
+        
+        # Call the create_events function asynchronously
+        events_data, markets_data = run_async(
+            create_events.create_events(leagues, days_to_fetch, start_date)
+        )
+        
+        return jsonify({
+            "status": "success",
+            "events": events_data,
+            "markets": markets_data
+        })
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
+@app.route('/settle-markets', methods=['POST'])
+def api_settle_markets():
+    """
+    Endpoint to settle markets based on event results
+    
+    Request body should contain:
+    - unsettled_events (list): List of unsettled events
+    - markets (list): List of markets to settle
+    """
+    try:
+        data = request.json
+        unsettled_events = data.get('unsettled_events', [])
+        markets = data.get('markets', [])
+        
+        # Call the settle_markets function asynchronously
+        result = run_async(
+            settle_events.settle_markets(unsettled_events, markets)
+        )
+        
+        return jsonify({
+            "status": "success",
+            "result": result
+        })
+    except Exception as e:
+        return jsonify({
+            "status": "error",
+            "message": str(e)
+        }), 500
+
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=5000, debug=True) 

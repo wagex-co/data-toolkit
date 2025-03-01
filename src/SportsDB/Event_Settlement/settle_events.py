@@ -1,11 +1,19 @@
 import aiohttp
 import logging
 from typing import List, Dict, Tuple, Optional
-from utils.types import (
+from pathlib import Path
+import sys
+
+# Add project root to Python path properly
+project_root = Path(__file__).resolve().parent.parent.parent.parent
+sys.path.insert(0, str(project_root))
+
+
+from src.SportsDB.utils.types import (
     EventSettlementData, MarketUpdate, EventUpdate,
     EventStatus, MarketStatus, MarketOutcome
 )
-from config.settings import settings
+from src.config.settings import settings
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
