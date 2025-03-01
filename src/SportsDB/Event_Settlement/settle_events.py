@@ -50,10 +50,6 @@ class SettleEvents:
                 home_score = int(sports_db_event.get('intHomeScore', 0) or 0)
                 away_score = int(sports_db_event.get('intAwayScore', 0) or 0)
 
-                if home_score == 0 and away_score == 0:
-                    logger.info(f"Skipping event {event['_id']} - scores not available")
-                    continue
-
                 event_data.append(EventSettlementData(
                     event_id=event['_id'],
                     sportsdb_id=event['sportsdb_id'],
