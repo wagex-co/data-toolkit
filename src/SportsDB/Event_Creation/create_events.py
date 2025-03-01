@@ -78,20 +78,10 @@ class CreateEvents:
         leagues: Dict[str, str],
         days_to_fetch: int = 7,
         start_date: Optional[str] = None,
-        default_lines: Optional[Dict[str, str]] = None
     ) -> Tuple[List[Dict], List[Dict]]:
         start = parse(start_date) if start_date else datetime.now()
         dates = [(start + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(days_to_fetch)]
         
-        default_lines = {
-            "NFL": "49.5",
-            "Baseball": "8.5",
-            "Basketball": "225",
-            "Hockey": "5.5",
-            "default": "2.5",
-            **(default_lines or {})
-        }
-
         all_events = []
         for league_name, league_id in leagues.items():
             logger.info(f"Getting events for {league_name}")
@@ -112,11 +102,6 @@ class CreateEvents:
             events_data.append(event_dict)
             
             # Create markets data
-            line = (default_lines["NFL"] if event.league == "NFL"
-                   else default_lines["Baseball"] if event.sport == "Baseball"
-                   else default_lines["Basketball"] if event.sport == "Basketball"
-                   else default_lines["default"])
-
             markets_data.extend([
                 {
                     "event_id": event.sportsdb_id,
@@ -127,7 +112,7 @@ class CreateEvents:
                     "event_id": event.sportsdb_id,
                     "type": MarketType.OVER_UNDER.value,
                     "title": get_over_under_type(event.sport),
-                    "line": line,
+                    "line": None,
                 }
             ])
 
