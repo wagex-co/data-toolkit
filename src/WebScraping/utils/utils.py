@@ -102,7 +102,7 @@ def map_team_name(espn_name: str, league: str):
             if confidence < 1.0:  # Only log if it's not an exact match
                 print(f"Matched '{espn_name}' to '{matched_name}' with confidence {confidence:.2f}")
                 
-                if confidence > 0.9 and "teams" in league_data and matched_name in league_data["teams"]:
+                if confidence > 0.899 and "teams" in league_data and matched_name in league_data["teams"]:
                     if "espns_name" not in league_data["teams"][matched_name] or league_data["teams"][matched_name]["espns_name"] != espn_name:
                         print(f"Updating espns_name for '{matched_name}' to '{espn_name}'")
                         settings.LEAGUE_DATA[league]["teams"][matched_name]["espns_name"] = espn_name

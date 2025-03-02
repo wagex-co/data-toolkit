@@ -236,7 +236,7 @@
                 ],
                 "short_name": "ALA",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mfn99h1734673842.png",
-                "espns_name": "Alaves"
+                "espns_name": "Alav\u00e9s"
             },
             "Athletic Bilbao": {
                 "id": "133727",
@@ -321,7 +321,7 @@
                 ],
                 "short_name": "LEG",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/tm0adr1616443898.png",
-                "espns_name": "Leganes"
+                "espns_name": "Legan\u00e9s"
             },
             "Mallorca": {
                 "id": "133733",
@@ -568,7 +568,7 @@
                 ],
                 "short_name": "FCP",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/5qupxa1608237013.png",
-                "espns_name": "St Pauli"
+                "espns_name": "St. Pauli"
             },
             "Stuttgart": {
                 "id": "133660",
@@ -1240,7 +1240,7 @@
                 ],
                 "short_name": "INT",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ryhu6d1617113103.png",
-                "espns_name": "Inter Milan"
+                "espns_name": "Internazionale"
             },
             "Jagiellonia Bialystok": {
                 "id": "135297",
@@ -1409,7 +1409,7 @@
                 ],
                 "short_name": "PSG",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rwqrrq1473504808.png",
-                "espns_name": "Paris SG"
+                "espns_name": "Paris Saint-Germain"
             },
             "Partizan Belgrade": {
                 "id": "133960",
@@ -2127,7 +2127,7 @@
                 ],
                 "short_name": "OLY",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xckasq1721291508.png",
-                "espns_name": "Olympiakos"
+                "espns_name": "Olympiacos"
             },
             "Pafos FC": {
                 "id": "137928",

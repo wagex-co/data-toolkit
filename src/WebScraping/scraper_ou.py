@@ -9,8 +9,6 @@ from datetime import datetime
 import os
 from pathlib import Path
 import sys
-import difflib
-from typing import Optional, Tuple
 # Add the project root directory to the Python path
 project_root = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(project_root))
@@ -149,7 +147,6 @@ def process_and_save_data(sources: dict = settings.ESPN_URLS, json_save: bool = 
         with open(output_file, 'w') as f:
             json.dump(result, f, indent=4)
     return result
-
 
 if __name__ == "__main__":
     result = process_and_save_data(sources=settings.ESPN_URLS, json_save=True)
