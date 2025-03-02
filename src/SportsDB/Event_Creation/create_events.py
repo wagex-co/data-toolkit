@@ -120,7 +120,6 @@ class CreateEvents:
                     "event_id": event.sportsdb_id,
                     "type": MarketType.OVER_UNDER.value,
                     "title": get_over_under_type(event.sport),
-                    "line": None,
                 }
             ])
 
