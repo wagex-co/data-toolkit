@@ -1,15 +1,6 @@
 from flask import Flask, request, jsonify
 import asyncio
-import json
-from pathlib import Path
-import sys
 from datetime import datetime
-
-# Add project root to Python path properly
-project_root = Path(__file__).resolve().parent.parent
-sys.path.insert(0, str(project_root))
-
-# Import the functions to expose via API
 from src.WebScraping.scraper_ou import process_and_save_data
 from src.SportsDB.Event_Creation.create_events import create_events
 from src.SportsDB.Event_Settlement.settle_events import settle_events
@@ -122,4 +113,4 @@ def api_settle_markets():
         }), 500
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True) 
+    app.run(host='0.0.0.0', port=3002, debug=True) 

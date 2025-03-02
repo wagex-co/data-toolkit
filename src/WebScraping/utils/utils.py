@@ -1,11 +1,6 @@
 from typing import Optional, Tuple
 import difflib
-from pathlib import Path
-import sys
 import json
-
-project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(project_root))
 from src.config.settings import settings
 
 def fuzzy_match_team_name(espn_name: str, league_data: dict, threshold: float = 0.8) -> Optional[Tuple[str, float]]:

@@ -7,11 +7,7 @@ import pandas as pd
 import json
 from datetime import datetime
 import os
-from pathlib import Path
-import sys
-# Add the project root directory to the Python path
-project_root = Path(__file__).resolve().parent.parent.parent
-sys.path.append(str(project_root))
+
 from src.config.settings import settings
 from src.WebScraping.utils.types import ProcessedDataResult
 from src.WebScraping.utils.utils import map_team_name

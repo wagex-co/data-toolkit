@@ -7,12 +7,33 @@ This repository contains a Flask API for sports data functions, including:
 
 ## Setup
 
-1. Install dependencies:
+There are two ways to set up this project:
+
+### 1. Development Installation
+
+For development, you can install the package in editable mode:
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd AllThingsDataSourcing
+
+# Install in development mode
+pip install -e .
 ```
+
+This allows you to modify the code and have the changes take effect immediately.
+
+### 2. Regular Installation
+
+```bash
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-2. Make sure your `.env` file contains all required API keys:
+### Environment Variables
+
+Make sure your `.env` file contains all required API keys:
 ```
 OPENAI_API_KEY=your_openai_api_key
 SPORTSDB_API_KEY=your_sportsdb_api_key
