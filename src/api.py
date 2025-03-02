@@ -10,9 +10,10 @@ project_root = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(project_root))
 
 # Import the functions to expose via API
-from src.WebScraping.over_under_scraper import scrape_over_unders
+from src.WebScraping.scraper_ou import process_and_save_data
 from src.SportsDB.Event_Creation.create_events import create_events
 from src.SportsDB.Event_Settlement.settle_events import settle_events
+from src.config.settings import settings
 
 app = Flask(__name__)
 
@@ -41,13 +42,11 @@ def api_scrape_over_unders():
     """
     try:
         data = request.json
-        leagues_data = data.get('leagues_data', {})
-        sources = data.get('sources', None)
-        
-        # Call the scrape_over_unders function
-        result = scrape_over_unders(leagues_data, sources)
-        
-        # Generate timestamp for response
+
+        leagues = data.get('leagues', {})
+        sources = {league: settings.ESPN_URLS[league] for league in leagues} if leagues else settings.ESPN_URLS
+
+        result = process_and_save_data(sources=sources, json_save=True)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         
         return jsonify({

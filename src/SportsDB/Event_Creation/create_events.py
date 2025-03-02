@@ -14,7 +14,7 @@ sys.path.insert(0, str(project_root))
 
 from src.SportsDB.utils.types import SportsDBEvent, MappedEvent, ApiResponse, EventStatus, MarketType 
 from src.config.settings import settings
-from src.SportsDB.utils.market_utils import get_over_under_type
+from src.SportsDB.utils.utils import get_over_under_type
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)

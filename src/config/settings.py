@@ -1,7 +1,7 @@
 from pydantic_settings import BaseSettings
 from typing import Dict
 from pydantic import Field
-
+import json
 
 class Settings(BaseSettings):
     # API Keys
@@ -14,6 +14,8 @@ class Settings(BaseSettings):
         "verbose": True,
         "headless": True,
     }
+
+    LEAGUE_DATA: Dict = json.load(open('DATA_MAIN/league_data.json'))
     
     # ESPN URLs Mapping
     ESPN_URLS: Dict[str, str] = {
