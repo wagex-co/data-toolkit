@@ -37,7 +37,7 @@ def api_scrape_over_unders():
         leagues = data.get('leagues', {})
         sources = {league: settings.ESPN_URLS[league] for league in leagues} if leagues else settings.ESPN_URLS
 
-        result = process_and_save_data(sources=sources, json_save=True)
+        result = process_and_save_data(sources=sources, json_save=False)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         
         return jsonify({
@@ -67,7 +67,6 @@ def api_create_events():
         days_to_fetch = data.get('days_to_fetch', 7)
         start_date = data.get('start_date', None)
         
-        # Call the create_events function asynchronously
         events_data, markets_data = run_async(
             create_events.create_events(leagues, days_to_fetch, start_date)
         )

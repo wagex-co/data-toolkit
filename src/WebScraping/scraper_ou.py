@@ -121,10 +121,7 @@ def process_and_save_data(sources: dict = settings.ESPN_URLS, json_save: bool = 
                 mapped_home_team = map_team_name(row['Home Team'], league)
                 game_data = {
                     "date": row['Date'],
-                    "teams": {
-                        "away": mapped_away_team,
-                        "home": mapped_home_team
-                    },
+                    "teams": (mapped_away_team, mapped_home_team),
                     "time": row['Time/Status'],
                     "over_under": row['Over/Under']
                 }
