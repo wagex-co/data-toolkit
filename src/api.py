@@ -22,8 +22,8 @@ def health_check():
     """Simple health check endpoint"""
     return jsonify({"status": "healthy", "timestamp": datetime.now().isoformat()})
 
-@app.route('/scrape-over-unders', methods=['POST'])
-def api_scrape_over_unders():
+@app.route('/get-ou-lines', methods=['POST'])
+def api_get_ou_lines():
     """
     Endpoint to scrape over/under totals for games
     
@@ -39,7 +39,7 @@ def api_scrape_over_unders():
 
         result = process_and_save_data(sources=sources, json_save=False)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
-        
+
         return jsonify({
             "status": "success",
             "timestamp": timestamp,

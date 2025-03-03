@@ -3542,7 +3542,7 @@
                 ],
                 "short_name": "SJS",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yui7871546193006.png",
-                "espns_name": "San Jose Sharks"
+                "espns_name": "San Jose"
             },
             "Seattle Kraken": {
                 "id": "140082",
@@ -3578,7 +3578,7 @@
                 ],
                 "short_name": "TOR",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mxig4p1570129307.png",
-                "espns_name": "Toronto Maple Leafs"
+                "espns_name": "Toronto"
             },
             "Utah Hockey Club": {
                 "id": "148494",
