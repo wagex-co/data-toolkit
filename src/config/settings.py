@@ -4,17 +4,8 @@ from pydantic import Field
 import json
 
 class Settings(BaseSettings):
-    # API Keys
-    OPENAI_API_KEY: str = Field(..., env="OPENAI_API_KEY")
     SPORTSDB_API_KEY: str = Field(..., env="SPORTSDB_API_KEY")
     
-    # LLM Configuration
-    LLM_MODEL: str = "openai/gpt-4o-mini"
-    SCRAPER_CONFIG: Dict = {
-        "verbose": True,
-        "headless": True,
-    }
-
     LEAGUE_DATA: Dict = json.load(open('DATA_MAIN/league_data.json'))
     
     # ESPN URLs Mapping

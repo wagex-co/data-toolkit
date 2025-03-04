@@ -6,7 +6,6 @@ from src.SportsDB.utils.types import (
     MarketOutcome, EventDictionaryType
 )
 from src.config.settings import settings
-import json
 import asyncio
 
 logging.basicConfig(level=logging.INFO)

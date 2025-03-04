@@ -11,7 +11,8 @@ COPY . .
 
 # Set environment variables
 ENV PORT=8080
+ENV SPORTSDB_API_KEY=998984
 EXPOSE 8080
 
 # Run the application with gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:$PORT", "--workers", "1", "--threads", "8", "src.api:app"] 
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--workers", "1", "--threads", "8", "src.api:app"] 
