@@ -7,7 +7,7 @@ COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy application code
-COPY src/ ./src/
+COPY src/ ./src/ DATA_MAIN/ ./DATA_MAIN/
 
 # Set environment variable for Flask
 ENV FLASK_APP=src.api
