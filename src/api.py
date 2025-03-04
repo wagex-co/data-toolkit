@@ -37,7 +37,7 @@ def api_get_ou_lines():
         leagues = data.get('leagues', {})
         sources = {league: settings.ESPN_URLS[league] for league in leagues} if leagues else settings.ESPN_URLS
 
-        result = process_and_save_data(sources=sources, json_save=False)
+        result = process_and_save_data(sources=sources, json_save=True)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
 
         return jsonify({
@@ -63,9 +63,14 @@ def api_create_events():
     """
     try:
         data = request.json
+        print(data)
         leagues = data.get('leagues', {})
-        days_to_fetch = data.get('days_to_fetch', 7)
-        start_date = data.get('start_date', None)
+        days_to_fetch = data.get('daysToFetch', 7)
+        start_date = data.get('startDate', None)
+
+        print(leagues)
+        print("days_to_fetch", days_to_fetch)
+        print("start_date", start_date)
         
         events_data, markets_data = run_async(
             create_events.create_events(leagues, days_to_fetch, start_date)
@@ -82,23 +87,20 @@ def api_create_events():
             "message": str(e)
         }), 500
 
-@app.route('/settle-markets', methods=['POST'])
-def api_settle_markets():
+@app.route('/settle-events', methods=['POST'])
+def api_settle_events():
     """
-    Endpoint to settle markets based on event results
+    Endpoint to settle events based on event results
     
     Request body should contain:
-    - unsettled_events (list): List of unsettled events
-    - markets (list): List of markets to settle
+    - unsettled_events (dict): Dictionary of unsettled events
     """
     try:
         data = request.json
-        unsettled_events = data.get('unsettled_events', [])
-        markets = data.get('markets', [])
-        
-        # Call the settle_markets function asynchronously
+        print(data)
+
         result = run_async(
-            settle_events.settle_markets(unsettled_events, markets)
+            settle_events.settle_events(data)
         )
         
         return jsonify({

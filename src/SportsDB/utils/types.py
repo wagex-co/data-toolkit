@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List, Optional, Dict
+from typing import List, Optional, Dict, Any, TypedDict, Union
 from enum import Enum
 
 class EventStatus(str, Enum):
@@ -107,3 +107,23 @@ class PayoutData(BaseModel):
     withheld_amount: float
     market_id: str
     status: OrderStatus 
+
+class EventData(TypedDict):
+    _id: str
+    sportsdb_id: str
+    scores: Optional[Dict[str, int]]
+
+class MarketData(TypedDict):
+    _id: str
+    type: str
+    line: Optional[Union[float, int]]
+
+class EventDictionary(TypedDict):
+    eventData: EventData
+
+class FailedMarket(TypedDict):
+    event_id: str
+    market_id: str
+    reason: str
+
+EventDictionaryType = Dict[str, Union[EventData, MarketData, Dict[str, Any]]]

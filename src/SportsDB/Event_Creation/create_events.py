@@ -79,6 +79,7 @@ class CreateEvents:
         days_to_fetch: int = 7,
         start_date: Optional[str] = None,
     ) -> Tuple[List[Dict], List[Dict]]:
+        print(f"Creating events for {len(leagues)} leagues, {days_to_fetch} days, starting from {start_date}")
         start = parse(start_date) if start_date else datetime.now()
         dates = [(start + timedelta(days=i)).strftime("%Y-%m-%d") for i in range(days_to_fetch)]
         
