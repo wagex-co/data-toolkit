@@ -9,4 +9,11 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY src/ ./src/
 
-CMD ["python", "-m", "src.api"]
+# Set environment variable for Flask
+ENV FLASK_APP=src.api
+
+# Expose the port
+EXPOSE 8080
+
+# Run with Gunicorn - single worker/thread for serverless
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--workers", "1", "--threads", "2", "src.api:app"]
