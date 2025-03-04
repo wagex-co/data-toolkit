@@ -6,11 +6,12 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy application code
-COPY src/ ./src/ DATA_MAIN/ ./DATA_MAIN/
+COPY src/ ./src/
+COPY DATA_MAIN/ ./DATA_MAIN/
 
-# Set environment variable for Flask
+# Set environment variables
 ENV FLASK_APP=src.api
+ENV PYTHONPATH=/app
 
 # Expose the port
 EXPOSE 8080
