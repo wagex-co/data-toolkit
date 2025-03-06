@@ -2,6 +2,30 @@ FROM python:3.9-alpine
 
 WORKDIR /app
 
+# Install Chrome and ChromeDriver dependencies
+RUN apk add --no-cache \
+    chromium \
+    chromium-chromedriver \
+    # Required dependencies for Chrome
+    nss \
+    freetype \
+    freetype-dev \
+    harfbuzz \
+    ca-certificates \
+    ttf-freefont \
+    # Build dependencies
+    gcc \
+    musl-dev \
+    python3-dev \
+    libffi-dev \
+    openssl-dev \
+    cargo
+
+# Set Chrome environment variables
+ENV CHROME_BIN=/usr/bin/chromium-browser \
+    CHROME_PATH=/usr/lib/chromium/ \
+    CHROMEDRIVER_PATH=/usr/bin/chromedriver
+
 # Copy requirements and install dependencies
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
