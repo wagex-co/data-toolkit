@@ -20,6 +20,7 @@ class Settings(BaseSettings):
         "Bundesliga": "https://www.espn.com/soccer/schedule/_/league/ger.1",
         "La Liga": "https://www.espn.com/soccer/schedule/_/league/esp.1",
         "Serie A": "https://www.espn.com/soccer/schedule/_/league/ita.1",
+        "MLB": "https://www.espn.com/mlb/schedule"
     }
     
     # League IDs for TheSportsDB

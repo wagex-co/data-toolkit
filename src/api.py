@@ -46,7 +46,14 @@ def api_get_ou_lines():
         data = request.json
 
         leagues = data.get('leagues', {})
-        sources = {league: settings.ESPN_URLS[league] for league in leagues} if leagues else settings.ESPN_URLS
+        sources = {}
+        for league in leagues:
+            if league not in settings.ESPN_URLS:
+                return jsonify({
+                    "status": "error",
+                    "message": f"Invalid league: {league}"
+                }), 400
+            sources[league] = settings.ESPN_URLS[league]
 
         result = process_and_save_data(sources=sources, json_save=True)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
