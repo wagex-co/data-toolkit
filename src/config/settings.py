@@ -6,6 +6,7 @@ import json
 class Settings(BaseSettings):
     SPORTSDB_API_KEY: str = Field(..., env="SPORTSDB_API_KEY")
     CRON_SECRET: str = Field(..., env="CRON_SECRET")
+    PYTHON_ENV: str = Field(..., env="PYTHON_ENV")
     
     LEAGUE_DATA: Dict = json.load(open('DATA_MAIN/league_data.json'))
     

@@ -48,7 +48,7 @@
                 ],
                 "short_name": "BOU",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/y08nak1534071116.png",
-                "espns_name": "Bournemouth"
+                "espns_name": "AFC Bournemouth"
             },
             "Brentford": {
                 "id": "134355",
@@ -69,7 +69,7 @@
                 ],
                 "short_name": "BRI",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ywypts1448810904.png",
-                "espns_name": "Brighton"
+                "espns_name": "Brighton & Hove Albion"
             },
             "Chelsea": {
                 "id": "133610",
@@ -114,7 +114,7 @@
                 ],
                 "short_name": "IPS",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/mdj1ey1634670785.png",
-                "espns_name": "Ipswich"
+                "espns_name": "Ipswich Town"
             },
             "Leicester": {
                 "id": "133626",
@@ -123,7 +123,7 @@
                 ],
                 "short_name": "LEI",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xtxwtu1448813356.png",
-                "espns_name": "Leicester"
+                "espns_name": "Leicester City"
             },
             "Liverpool": {
                 "id": "133602",
@@ -159,7 +159,7 @@
                 ],
                 "short_name": "NEW",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lhwuiz1621593302.png",
-                "espns_name": "Newcastle"
+                "espns_name": "Newcastle United"
             },
             "Nottingham Forest": {
                 "id": "133720",
@@ -186,7 +186,7 @@
                 ],
                 "short_name": "TOT",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/dfyfhl1604094109.png",
-                "espns_name": "Tottenham"
+                "espns_name": "Tottenham Hotspur"
             },
             "West Ham": {
                 "id": "133636",
@@ -195,7 +195,7 @@
                 ],
                 "short_name": "WHU",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yutyxs1467459956.png",
-                "espns_name": "West Ham"
+                "espns_name": "West Ham United"
             },
             "Wolves": {
                 "id": "133599",
@@ -204,7 +204,7 @@
                 ],
                 "short_name": "WOL",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/u9qr031621593327.png",
-                "espns_name": "Wolves"
+                "espns_name": "Wolverhampton Wanderers"
             }
         }
     },
@@ -405,7 +405,7 @@
                 ],
                 "short_name": "RAY",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/nzhu941655595465.png",
-                "espns_name": "Vallecano"
+                "espns_name": "Rayo Vallecano"
             },
             "Villarreal": {
                 "id": "133740",
@@ -514,7 +514,7 @@
                 ],
                 "short_name": "HEI",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/lbj7g01608236988.png",
-                "espns_name": "FC Heidenheim"
+                "espns_name": "1. FC Heidenheim 1846"
             },
             "Freiburg": {
                 "id": "133653",
@@ -586,7 +586,7 @@
                 ],
                 "short_name": "FCU",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/q0o5001599679795.png",
-                "espns_name": "Union Berlin"
+                "espns_name": "1. FC Union Berlin"
             },
             "Werder Bremen": {
                 "id": "133662",
@@ -795,7 +795,7 @@
                 ],
                 "short_name": "ROM",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/xqpqpq1448806641.png",
-                "espns_name": "Roma"
+                "espns_name": "AS Roma"
             },
             "Torino": {
                 "id": "133687",
@@ -3059,7 +3059,7 @@
                 ],
                 "short_name": "ATL",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/yjs76e1617811496.png",
-                "espns_name": "Atlanta Braves"
+                "espns_name": "Atlanta"
             },
             "Baltimore Orioles": {
                 "id": "135251",
@@ -3068,7 +3068,7 @@
                 ],
                 "short_name": "BAL",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ytywvu1431257088.png",
-                "espns_name": "Baltimore Orioles"
+                "espns_name": "Baltimore"
             },
             "Boston Red Sox": {
                 "id": "135252",
@@ -3086,7 +3086,7 @@
                 ],
                 "short_name": "CHC",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/wxbe071521892391.png",
-                "espns_name": "Chicago Cubs"
+                "espns_name": "Chicago"
             },
             "Chicago White Sox": {
                 "id": "135253",
@@ -3140,7 +3140,7 @@
                 ],
                 "short_name": "HOU",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/miwigx1521893583.png",
-                "espns_name": "Houston Astros"
+                "espns_name": "Houston"
             },
             "Kansas City Royals": {
                 "id": "135257",
@@ -3149,7 +3149,7 @@
                 ],
                 "short_name": "KC",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/ii3rz81554031260.png",
-                "espns_name": "Kansas City Royals"
+                "espns_name": "Kansas City"
             },
             "Los Angeles Angels": {
                 "id": "135258",
@@ -3176,7 +3176,7 @@
                 ],
                 "short_name": "MIA",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/0722fs1546001701.png",
-                "espns_name": "Miami Marlins"
+                "espns_name": "Miami"
             },
             "Milwaukee Brewers": {
                 "id": "135274",
@@ -3203,7 +3203,7 @@
                 ],
                 "short_name": "NYM",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/rxqspq1431540337.png",
-                "espns_name": "New York Mets"
+                "espns_name": "New York"
             },
             "New York Yankees": {
                 "id": "135260",
@@ -3239,7 +3239,7 @@
                 ],
                 "short_name": "PIT",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/kw6uqr1617527138.png",
-                "espns_name": "Pittsburgh Pirates"
+                "espns_name": "Pittsburgh"
             },
             "San Diego Padres": {
                 "id": "135278",
@@ -3524,7 +3524,7 @@
                 ],
                 "short_name": "PHI",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/qxxppp1421794965.png",
-                "espns_name": "Philadelphia Flyers"
+                "espns_name": "Philadelphia"
             },
             "Pittsburgh Penguins": {
                 "id": "134844",
@@ -3533,7 +3533,7 @@
                 ],
                 "short_name": "PIT",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/dsj3on1546192477.png",
-                "espns_name": "Pittsburgh Penguins"
+                "espns_name": "Pittsburgh"
             },
             "San Jose Sharks": {
                 "id": "134853",
@@ -3551,7 +3551,7 @@
                 ],
                 "short_name": "SEA",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/zsx49m1595775836.png",
-                "espns_name": "Seattle Kraken"
+                "espns_name": "Seattle"
             },
             "St. Louis Blues": {
                 "id": "134859",
@@ -3587,7 +3587,7 @@
                 ],
                 "short_name": "UHC",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/zxfycs1718706518.png",
-                "espns_name": "Utah Hockey Club"
+                "espns_name": "Utah"
             },
             "Vancouver Canucks": {
                 "id": "134850",
@@ -3623,7 +3623,7 @@
                 ],
                 "short_name": "WPG",
                 "badge_url": "https://www.thesportsdb.com/images/media/team/badge/bwn9hr1547233611.png",
-                "espns_name": "Winnipeg Jets"
+                "espns_name": "Winnipeg"
             }
         }
     }

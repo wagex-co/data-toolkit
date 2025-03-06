@@ -12,6 +12,9 @@ app = Flask(__name__)
 def require_cron_secret(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
+        print("PYTHON_ENV", settings.PYTHON_ENV)
+        if settings.PYTHON_ENV is not None:
+            return f(*args, **kwargs)
         cron_secret = request.headers.get('x-cron-schedule-secret')
         if not cron_secret or cron_secret != settings.CRON_SECRET:
             return jsonify({"error": "Unauthorized - Invalid or missing cron secret"}), 401

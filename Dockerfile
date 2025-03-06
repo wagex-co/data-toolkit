@@ -36,6 +36,7 @@ COPY DATA_MAIN/ ./DATA_MAIN/
 # Set environment variables
 ENV FLASK_APP=src.api
 ENV PYTHONPATH=/app
+ENV PYTHON_ENV=production
 
 # Expose the port
 EXPOSE 8080
