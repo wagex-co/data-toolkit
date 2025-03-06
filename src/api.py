@@ -5,8 +5,18 @@ from src.WebScraping.scraper_ou import process_and_save_data
 from src.SportsDB.Event_Creation.create_events import create_events
 from src.SportsDB.Event_Settlement.settle_events import settle_events
 from src.config.settings import settings
+from functools import wraps
 
 app = Flask(__name__)
+
+def require_cron_secret(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        cron_secret = request.headers.get('x-cron-schedule-secret')
+        if not cron_secret or cron_secret != settings.CRON_SECRET:
+            return jsonify({"error": "Unauthorized - Invalid or missing cron secret"}), 401
+        return f(*args, **kwargs)
+    return decorated_function
 
 # Helper function to run async functions
 def run_async(coro):
@@ -23,6 +33,7 @@ def health_check():
     return jsonify({"status": "healthy", "timestamp": datetime.now().isoformat()})
 
 @app.route('/get-ou-lines', methods=['POST'])
+@require_cron_secret
 def api_get_ou_lines():
     """
     Endpoint to scrape over/under totals for games
@@ -35,7 +46,14 @@ def api_get_ou_lines():
         data = request.json
 
         leagues = data.get('leagues', {})
-        sources = {league: settings.ESPN_URLS[league] for league in leagues} if leagues else settings.ESPN_URLS
+        sources = {}
+        for league in leagues:
+            if league not in settings.ESPN_URLS:
+                return jsonify({
+                    "status": "error",
+                    "message": f"Invalid league: {league}"
+                }), 400
+            sources[league] = settings.ESPN_URLS[league]
 
         result = process_and_save_data(sources=sources, json_save=True)
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
@@ -52,6 +70,7 @@ def api_get_ou_lines():
         }), 500
 
 @app.route('/create-events', methods=['POST'])
+@require_cron_secret
 def api_create_events():
     """
     Endpoint to create events from SportsDB
@@ -88,6 +107,7 @@ def api_create_events():
         }), 500
 
 @app.route('/settle-events', methods=['POST'])
+@require_cron_secret
 def api_settle_events():
     """
     Endpoint to settle events based on event results

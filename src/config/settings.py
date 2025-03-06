@@ -5,6 +5,7 @@ import json
 
 class Settings(BaseSettings):
     SPORTSDB_API_KEY: str = Field(..., env="SPORTSDB_API_KEY")
+    CRON_SECRET: str = Field(..., env="CRON_SECRET")
     
     LEAGUE_DATA: Dict = json.load(open('DATA_MAIN/league_data.json'))
     
@@ -19,6 +20,7 @@ class Settings(BaseSettings):
         "Bundesliga": "https://www.espn.com/soccer/schedule/_/league/ger.1",
         "La Liga": "https://www.espn.com/soccer/schedule/_/league/esp.1",
         "Serie A": "https://www.espn.com/soccer/schedule/_/league/ita.1",
+        "MLB": "https://www.espn.com/mlb/schedule"
     }
     
     # League IDs for TheSportsDB
