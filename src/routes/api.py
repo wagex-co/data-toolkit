@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Blueprint, request, jsonify, current_app
 import asyncio
 from datetime import datetime
 from src.WebScraping.scraper_ou import process_and_save_data
@@ -7,13 +7,13 @@ from src.SportsDB.Event_Settlement.settle_events import settle_events
 from src.config.settings import settings
 from functools import wraps
 
-app = Flask(__name__)
+api_bp = Blueprint('api', __name__)
 
 def require_cron_secret(f):
     @wraps(f)
     def decorated_function(*args, **kwargs):
         print("PYTHON_ENV", settings.PYTHON_ENV)
-        if settings.PYTHON_ENV is not None:
+        if settings.PYTHON_ENV is not None and settings.PYTHON_ENV == 'development':
             return f(*args, **kwargs)
         cron_secret = request.headers.get('x-cron-schedule-secret')
         if not cron_secret or cron_secret != settings.CRON_SECRET:
@@ -21,21 +21,12 @@ def require_cron_secret(f):
         return f(*args, **kwargs)
     return decorated_function
 
-# Helper function to run async functions
-def run_async(coro):
-    loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(loop)
-    try:
-        return loop.run_until_complete(coro)
-    finally:
-        loop.close()
-
-@app.route('/health', methods=['GET'])
+@api_bp.route('/health', methods=['GET'])
 def health_check():
     """Simple health check endpoint"""
     return jsonify({"status": "healthy", "timestamp": datetime.now().isoformat()})
 
-@app.route('/get-ou-lines', methods=['POST'])
+@api_bp.route('/get-ou-lines', methods=['POST'])
 @require_cron_secret
 def api_get_ou_lines():
     """
@@ -72,7 +63,7 @@ def api_get_ou_lines():
             "message": str(e)
         }), 500
 
-@app.route('/create-events', methods=['POST'])
+@api_bp.route('/create-events', methods=['POST'])
 @require_cron_secret
 def api_create_events():
     """
@@ -94,8 +85,8 @@ def api_create_events():
         print("days_to_fetch", days_to_fetch)
         print("start_date", start_date)
         
-        events_data, markets_data = run_async(
-            create_events.create_events(leagues, days_to_fetch, start_date)
+        events_data, markets_data = current_app.run_async(
+            create_events(leagues, days_to_fetch, start_date)
         )
         
         return jsonify({
@@ -109,7 +100,7 @@ def api_create_events():
             "message": str(e)
         }), 500
 
-@app.route('/settle-events', methods=['POST'])
+@api_bp.route('/settle-events', methods=['POST'])
 @require_cron_secret
 def api_settle_events():
     """
@@ -122,8 +113,8 @@ def api_settle_events():
         data = request.json
         print(data)
 
-        result = run_async(
-            settle_events.settle_events(data)
+        result = current_app.run_async(
+            settle_events(data)
         )
         
         return jsonify({
@@ -134,7 +125,4 @@ def api_settle_events():
         return jsonify({
             "status": "error",
             "message": str(e)
-        }), 500
-
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=3002, debug=True) 
+        }), 500 
