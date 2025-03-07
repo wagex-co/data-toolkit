@@ -76,17 +76,12 @@ def api_create_events():
     """
     try:
         data = request.json
-        print(data)
         leagues = data.get('leagues', {})
         days_to_fetch = data.get('daysToFetch', 7)
         start_date = data.get('startDate', None)
-
-        print(leagues)
-        print("days_to_fetch", days_to_fetch)
-        print("start_date", start_date)
         
         events_data, markets_data = current_app.run_async(
-            create_events(leagues, days_to_fetch, start_date)
+            create_events.create_events(leagues, days_to_fetch, start_date)
         )
         
         return jsonify({
@@ -111,10 +106,9 @@ def api_settle_events():
     """
     try:
         data = request.json
-        print(data)
 
         result = current_app.run_async(
-            settle_events(data)
+            settle_events.settle_events(data)
         )
         
         return jsonify({
