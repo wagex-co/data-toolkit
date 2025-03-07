@@ -1,4 +1,5 @@
 import aiohttp
+import json
 import logging
 from typing import Dict, List, Optional, Any, Tuple
 from src.SportsDB.utils.types import (
@@ -101,7 +102,9 @@ class MarketSettlementEngine:
                 return MarketOutcome.AWAY
             return MarketOutcome.DRAW
         
-        elif market['type'] == 'over_under' and market.get('line'):
+        elif market['type'] == 'over_under':
+            if not market.get('line'):
+                raise ValueError(f"No line provided for over/under market {market['_id']}")
             total_score = scores['home_score'] + scores['away_score']
             line = float(market['line'])
             
@@ -184,6 +187,7 @@ class SettleEvents:
             }
             
             if not self._process_markets(event_id, event_info, scores):
+                self.update_failed_events(event_id, "No markets found")
                 continue
 
             event_update = EventUpdate(
@@ -204,8 +208,8 @@ class SettleEvents:
                 market_id = market.get('_id')
                 
                 if not market_id:
-                    continue
-                    
+                    return False
+                
                 try:
                     outcome = self.settlement_engine.determine_outcome(market, scores)
                     
@@ -214,14 +218,13 @@ class SettleEvents:
                         outcome=outcome,
                         status=MarketStatus.CLOSED
                     )
-                    
                     self.coupled_updates[event_id]["market_updates"].append(market_update.model_dump())
                     
                 except ValueError as e:
                     logger.error(f"Error determining outcome for market {market_id}: {e}")
-                    self.update_failed_events(event_id, f"Error determining outcome for market {market_id}: {e}")
                     return False
-                
+            else:
+                return False
         return True
 
     def update_failed_events(self, event_id: str, error_message: str) -> None:
@@ -232,6 +235,7 @@ class SettleEvents:
     
     async def settle_events(self, event_dictionary: EventDictionaryType) -> Dict[str, Any]:
         """Main method to settle events."""
+        logger.info(f"Settingtle events for {len(event_dictionary)} events")
         self.event_dictionary = event_dictionary
         self.coupled_updates = {} 
         self.failed_events = {}    
@@ -277,7 +281,6 @@ class SettleEvents:
                 }
             
             for event_id, error in self.failed_events.items():
-                if event_id not in self.coupled_updates:
                     self.coupled_updates[event_id] = f"FATAL ERROR: {error}"
             
             for event_id in event_dictionary:
@@ -288,7 +291,7 @@ class SettleEvents:
             logger.info(f"Processing complete. Events: {len(event_dictionary)}, "
                        f"Successful: {len([k for k, v in self.coupled_updates.items() if isinstance(v, dict)])}, "
                        f"Failed: {len([k for k, v in self.coupled_updates.items() if isinstance(v, str)])}")
-            
+       
             return {
                 "message": "Settlement completed successfully",
                 "events": self.coupled_updates,  
