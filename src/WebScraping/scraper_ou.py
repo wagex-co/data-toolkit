@@ -33,11 +33,14 @@ def scrape_over_under(url: str):
     chrome_options.add_argument("--disable-gpu")
     chrome_options.add_argument("--disable-software-rasterizer")
     chrome_options.add_argument("--remote-debugging-port=9222")
-    chrome_options.binary_location = "/usr/bin/chromium-browser"
-    
-    chromedriver_path = os.environ.get('CHROMEDRIVER_PATH', '/usr/bin/chromedriver')
-    service = Service(executable_path=chromedriver_path)
-    driver = webdriver.Chrome(options=chrome_options, service=service)
+
+    if settings.PYTHON_ENV == 'production':
+        chrome_options.binary_location = "/usr/bin/chromium-browser"
+        chromedriver_path = os.environ.get('CHROMEDRIVER_PATH', '/usr/bin/chromedriver')
+        service = Service(executable_path=chromedriver_path) 
+        driver = webdriver.Chrome(options=chrome_options, service=service)
+    else:
+        driver = webdriver.Chrome(options=chrome_options)
 
     try:
         driver.get(url)
@@ -134,15 +137,12 @@ def process_and_save_data(sources: dict = settings.ESPN_URLS, json_save: bool = 
                     "over_under": row['Over/Under']
                 }
                 games_list.append(game_data)
-            
             result[league] = games_list
         else:
             print(f"No data found for {league}")
     
     if json_save:
-        # Create data directory if it doesn't exist
         os.makedirs("./src/WebScraping/data", exist_ok=True)
-        # Save results with timestamp
         timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
         output_file = f'./src/WebScraping/data/over_unders_{timestamp}.json'
         with open(output_file, 'w') as f:

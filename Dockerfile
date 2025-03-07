@@ -34,11 +34,12 @@ COPY src/ ./src/
 COPY DATA_MAIN/ ./DATA_MAIN/
 
 # Set environment variables
-ENV FLASK_APP=src.api
+ENV FLASK_APP=src.app
 ENV PYTHONPATH=/app
+ENV PYTHON_ENV=production
 
 # Expose the port
 EXPOSE 8080
 
 # Run with Gunicorn - single worker/thread for serverless
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--workers", "1", "--threads", "2", "src.api:app"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8080", "--workers", "1", "--threads", "2", "src.wsgi:app"]
