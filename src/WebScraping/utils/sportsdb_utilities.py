@@ -463,8 +463,8 @@ if __name__ == "__main__":
             # print(list(player['strPlayer'] for player in api.lookup_event_lineup(val[1])['lineup']))
             # print(api.lookup_event_stats(val[1])['eventstats'])
             # # get stats
-            # stats = api.lookup_event_stats(val[1])['eventstats']
-            # print(list((stat['strStat'], stat['intHome'], stat['intAway']) for stat in stats))
+            stats = api.lookup_event_stats(val[1])['eventstats']
+            print(list((stat['strStat'], stat['intHome'], stat['intAway']) for stat in stats))
             ## Event Details
             # event_details = api.lookup_event(val[1])['events'][0]
             # print(event_details)
