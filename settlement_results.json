@@ -11,6 +11,24 @@
             "status": "completed"
           },
           "market_updates": []
+        },
+        "456": {
+          "event_update": {
+            "event_id": "456",
+            "is_settled": true,
+            "result": "88-102",
+            "status": "completed"
+          },
+          "market_updates": []
+        },
+        "789": {
+          "event_update": {
+            "event_id": "789",
+            "is_settled": true,
+            "result": "100-100",
+            "status": "completed"
+          },
+          "market_updates": []
         }
       },
       "updated_dictionary": {
@@ -24,6 +42,28 @@
               "away_score": 94
             }
           }
+        },
+        "456": {
+          "eventData": {
+            "sportsdb_id": "7654321",
+            "home_team": "Team C",
+            "away_team": "Team D",
+            "scores": {
+              "home_score": 88,
+              "away_score": 102
+            }
+          }
+        },
+        "789": {
+          "eventData": {
+            "sportsdb_id": "9876543",
+            "home_team": "Team E",
+            "away_team": "Team F",
+            "scores": {
+              "home_score": 100,
+              "away_score": 100
+            }
+          }
         }
       }
     },
@@ -34,7 +74,25 @@
         "winner": 1,
         "tx_hash": {
           "status": "success",
-          "transaction_hash": "0x63b221b1aa56c4f605508bbcd1119a3a227ab1c62c448cf7fc85e0f54e209710"
+          "transaction_hash": "0x1f8eb06b36ba3da162f8963136adf706c7df512428d2f194017822cdb40bf8e3"
+        }
+      },
+      "456": {
+        "status": "success",
+        "blockchain_event_id": 456,
+        "winner": 2,
+        "tx_hash": {
+          "status": "success",
+          "transaction_hash": "0x2615d5445322e1d69d1dd89e0617417c9af39a45f05af1da93e43419c5696c44"
+        }
+      },
+      "789": {
+        "status": "success",
+        "blockchain_event_id": 789,
+        "winner": 3,
+        "tx_hash": {
+          "status": "success",
+          "transaction_hash": "0x294ea5185d6bd56ab0cae62c271ef3ef0da509221088d0d3ceea5e6c8747500f"
         }
       }
     }
@@ -45,7 +103,23 @@
       "event_id": 123,
       "tx_hash": {
         "status": "success",
-        "transaction_hash": "0x199bbb133bf6d25fa5a564213878eb6319d77ebabc3c9700369c36a1096a6b32"
+        "transaction_hash": "0xe89ebd940b66438d42c787623325ecd6a67d0036c9bad7d73e8f6d82d19a405c"
+      }
+    },
+    "1": {
+      "status": "success",
+      "event_id": 456,
+      "tx_hash": {
+        "status": "success",
+        "transaction_hash": "0xbbe9cdc35fc8d807d879321518f29ee605cde6b04d53450e507392607b59251c"
+      }
+    },
+    "2": {
+      "status": "success",
+      "event_id": 789,
+      "tx_hash": {
+        "status": "success",
+        "transaction_hash": "0xf3ef72154d9e4ab734fe47127fb1dc05b3e12fae89dc8cc6b6d13e74f5245906"
       }
     }
   }
