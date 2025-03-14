@@ -1,0 +1,13 @@
+{
+  "123": {
+    "eventData": {
+      "sportsdb_id": "1234567",
+      "home_team": "Team A",
+      "away_team": "Team B",
+      "scores": {
+        "home_score": 105,
+        "away_score": 94
+      }
+    }
+  }
+}

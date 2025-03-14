@@ -127,7 +127,7 @@ class SettleEvents:
         self.event_dictionary = {}
         self.coupled_updates = {}  
 
-    async def gather_scores(self, event_dictionary: EventDictionaryType) -> Tuple[List[str], bool]:
+    async def gather_scores(self, event_dictionary: EventDictionaryType, test_mode=False) -> Tuple[List[str], bool]:
         """Gather scores for events and update the event dictionary."""
         postponed_events = []
         scores_gathered = False
@@ -135,8 +135,24 @@ class SettleEvents:
         for event_id, event_info in event_dictionary.items():
             try:
                 event_data = event_info.get('eventData', {})
-                if not event_data or not event_data.get('sportsdb_id'):
-                    self.update_failed_events(event_id, "No sportsdb_id found or no event data")
+                if not event_data:
+                    self.update_failed_events(event_id, "No event data")
+                    continue
+
+                # In test mode, use the scores directly from the event data
+                if test_mode:
+                    scores = event_data.get('scores')
+                    if not scores:
+                        self.update_failed_events(event_id, "No scores found in test data")
+                        continue
+                    
+                    # Scores are already in the event data, so we're good
+                    scores_gathered = True
+                    continue
+                
+                # Normal API flow for non-test mode
+                if not event_data.get('sportsdb_id'):
+                    self.update_failed_events(event_id, "No sportsdb_id found")
                     continue  
 
                 sports_db_event = await self.api_client.get_event_details(event_data['sportsdb_id'])
@@ -233,7 +249,7 @@ class SettleEvents:
         else:
             self.failed_events[event_id] += f"\n{error_message}"
     
-    async def settle_events(self, event_dictionary: EventDictionaryType) -> Dict[str, Any]:
+    async def settle_events(self, event_dictionary: EventDictionaryType, test_mode=False) -> Dict[str, Any]:
         """Main method to settle events."""
         logger.info(f"Settingtle events for {len(event_dictionary)} events")
         self.event_dictionary = event_dictionary
@@ -241,7 +257,8 @@ class SettleEvents:
         self.failed_events = {}    
         
         try:
-            postponed_events, scores_gathered = await self.gather_scores(self.event_dictionary)
+            # Pass test_mode to gather_scores
+            postponed_events, scores_gathered = await self.gather_scores(self.event_dictionary, test_mode)
             
             if not postponed_events and not scores_gathered and not self.failed_events:
                 logger.info("No events to settle - no scores gathered and no postponed events")
