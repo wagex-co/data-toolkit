@@ -11,6 +11,7 @@ logger = logging.getLogger(__name__)
 async def main():
     parser = argparse.ArgumentParser(description="Run the settlement process")
     parser.add_argument("--events-file", type=str, help="Path to events JSON file")
+    parser.add_argument('--test-mode', action='store_true', help='Run in test mode without API calls')
     args = parser.parse_args()
     
     # load events from file if provided, otherwise use an empty dictionary
@@ -21,7 +22,7 @@ async def main():
         event_dictionary = {}
         
     # create settlement service
-    settlement_service = SettlementService()
+    settlement_service = SettlementService(test_mode=args.test_mode)
     
     # run settlement cycle
     results = await settlement_service.run_settlement_cycle(event_dictionary)
