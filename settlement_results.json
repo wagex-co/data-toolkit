@@ -1,0 +1,52 @@
+{
+  "settlement": {
+    "sports_settlement": {
+      "message": "Settlement completed successfully",
+      "events": {
+        "123": {
+          "event_update": {
+            "event_id": "123",
+            "is_settled": true,
+            "result": "105-94",
+            "status": "completed"
+          },
+          "market_updates": []
+        }
+      },
+      "updated_dictionary": {
+        "123": {
+          "eventData": {
+            "sportsdb_id": "1234567",
+            "home_team": "Team A",
+            "away_team": "Team B",
+            "scores": {
+              "home_score": 105,
+              "away_score": 94
+            }
+          }
+        }
+      }
+    },
+    "blockchain_settlement": {
+      "123": {
+        "status": "success",
+        "blockchain_event_id": 123,
+        "winner": 1,
+        "tx_hash": {
+          "status": "success",
+          "transaction_hash": "0x63b221b1aa56c4f605508bbcd1119a3a227ab1c62c448cf7fc85e0f54e209710"
+        }
+      }
+    }
+  },
+  "resolution": {
+    "0": {
+      "status": "success",
+      "event_id": 123,
+      "tx_hash": {
+        "status": "success",
+        "transaction_hash": "0x199bbb133bf6d25fa5a564213878eb6319d77ebabc3c9700369c36a1096a6b32"
+      }
+    }
+  }
+}
