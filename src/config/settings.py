@@ -7,6 +7,15 @@ class Settings(BaseSettings):
     SPORTSDB_API_KEY: str = Field(..., env="SPORTSDB_API_KEY")
     CRON_SECRET: str = Field(..., env="CRON_SECRET")
     PYTHON_ENV: str = Field(..., env="PYTHON_ENV")
+
+    # Blockchain Settings
+    RPC_URL: str = Field(..., env="RPC_URL")
+    PRIVATE_KEY: str = Field(..., env="PRIVATE_KEY")
+    ORACLE_ADDRESS: str = Field(..., env="ORACLE_ADDRESS")
+    ORACLE_ABI_PATH: str = Field(..., env="ORACLE_ABI_PATH")
+    USDC_INTEGRATION_ADDRESS: str = Field(..., env="USDC_INTEGRATION_ADDRESS")
+    USDC_INTEGRATION_ABI_PATH: str = Field(..., env="USDC_INTEGRATION_ABI_PATH")
+    
     
     LEAGUE_DATA: Dict = json.load(open('DATA_MAIN/league_data.json'))
     

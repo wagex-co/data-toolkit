@@ -8,3 +8,4 @@ pandas>=2.1.4
 requests>=2.31.0
 pydantic-settings>=2.1.0
 aiohttp-cors>=0.7.0
+web3>=5.31.1
