@@ -10,7 +10,8 @@ logger = logging.getLogger(__name__)
 class SettlementService:
     """Service for automating the settlement of bets based on sports results."""
     
-    def __init__(self):
+    def __init__(self, test_mode=False):
+        self.test_mode = test_mode
         self.blockchain_client = BlockchainClient()
         self.settle_events_client = settle_events
         
@@ -50,8 +51,8 @@ class SettlementService:
         Returns:
             Dictionary with settlement results
         """
-        # settle events
-        settlement_results = await self.settle_events_client.settle_events(event_dictionary)
+        # settle events - pass the test_mode flag
+        settlement_results = await self.settle_events_client.settle_events(event_dictionary, test_mode=self.test_mode)
         
         # track results from blockchain
         blockchain_results = {}
